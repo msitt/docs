@@ -10,21 +10,21 @@ gtag('config', 'G-0WDD29GGN2');
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=Edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta name="description" content="Find out what you need to know about upgrading to Chocolatey products v2.0.0 and Chocolatey Licensed Extension v6.0.0">
+        <meta name="description" content="How to use hooks with Chocolatey packages">
         <meta name="twitter:site" content="@chocolateynuget">
-        <meta name="twitter:title" content="Chocolatey Software Docs | Upgrading To Chocolatey Products v2.0.0 and Chocolatey Licensed Extension 6.0.0">
+        <meta name="twitter:title" content="Chocolatey Software Docs | Hook Scripts">
             <meta name="twitter:card" content="summary">
             <meta name="twitter:image" content="https://docs.chocolatey.org/assets/images/global-shared/twitter-share.png">
-        <meta property="og:title" content="Chocolatey Software Docs | Upgrading To Chocolatey Products v2.0.0 and Chocolatey Licensed Extension 6.0.0">
-        <meta property="og:description" content="Find out what you need to know about upgrading to Chocolatey products v2.0.0 and Chocolatey Licensed Extension v6.0.0">
+        <meta property="og:title" content="Chocolatey Software Docs | Hook Scripts">
+        <meta property="og:description" content="How to use hooks with Chocolatey packages">
         <meta property="og:site_name" content="Chocolatey Software">
         <meta property="og:type" content="product">
         <meta property="og:image" content="https://docs.chocolatey.org/assets/images/global-shared/facebook-share.png">
-        <meta property="og:url" content="https://docs.chocolatey.org/en-us/guides/upgrading-to-chocolatey-v2-v6">
+        <meta property="og:url" content="https://docs.chocolatey.org/en-us/create/hook-scripts">
         <meta property="product:brand" content="Chocolatey Software">
         <meta property="product:category" content="software">
         <meta name="flattr:id" content="mqgjkp">
-        <meta property="DC.title" content="Chocolatey Software Docs | Upgrading To Chocolatey Products v2.0.0 and Chocolatey Licensed Extension 6.0.0">
+        <meta property="DC.title" content="Chocolatey Software Docs | Hook Scripts">
         <meta property="copyright" content="Chocolatey is Copyright 2020 - 2023 Chocolatey Software,Inc.">
         <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
         <link rel="apple-touch-icon" href="/apple-touch-icon.png">
@@ -41,7 +41,7 @@ gtag('config', 'G-0WDD29GGN2');
         <link rel="stylesheet" href="/assets/css/chocolatey.bundle.min.css">
         <script type="text/javascript" src="/assets/js/chocolatey-head.bundle.min.js"></script>
         <script type="text/javascript" async="" referrerpolicy="unsafe-url" src="https://ws.zoominfo.com/pixel/KPKpTJOFOv5SuV7X3eGx"></script>
-        <title>Chocolatey Software Docs | Upgrading To Chocolatey Products v2.0.0 and Chocolatey Licensed Extension 6.0.0</title>
+        <title>Chocolatey Software Docs | Hook Scripts</title>
     </head>
     <body class="chocolatey-docs">
         <header>
@@ -1491,12 +1491,12 @@ gtag('config', 'G-0WDD29GGN2');
                                                             </ul>
                                                         </div>
                                                     </li>
-                                                    <li class="nav-item nav-item-blue">
-                                                        <div class="nav-link nav-link-collapse d-flex">
-                                                            <button class="btn btn-collapse rounded-0 border-0 ps-3 collapsed" type="button" data-bs-toggle="collapse" aria-expanded="false" aria-controls="id-50c42608-01a7-44db-871d-4136817c0d28" aria-label="collapse or expand navigation" href="#id-50c42608-01a7-44db-871d-4136817c0d28"></button>
+                                                    <li class="nav-item nav-item-blue active">
+                                                        <div class="nav-link nav-link-collapse d-flex active">
+                                                            <button class="btn btn-collapse rounded-0 border-0 ps-3" type="button" data-bs-toggle="collapse" aria-expanded="true" aria-controls="id-50c42608-01a7-44db-871d-4136817c0d28" aria-label="collapse or expand navigation" href="#id-50c42608-01a7-44db-871d-4136817c0d28"></button>
                                                             <a href="/en-us/create">Package Creation</a>
                                                         </div>
-                                                        <div class="collapse" id="id-50c42608-01a7-44db-871d-4136817c0d28">
+                                                        <div class="collapse show" id="id-50c42608-01a7-44db-871d-4136817c0d28">
                                                             <ul class="navbar-nav">
                                                                         <li class="nav-item">
                                                                             <a class="nav-link ps-5" href="/en-us/create/create-packages">Create Packages</a>
@@ -1684,20 +1684,20 @@ gtag('config', 'G-0WDD29GGN2');
                                                                             <a class="nav-link ps-5" href="/en-us/create/automatic-packages">Automatic Packaging</a>
                                                                         </li>
                                                                         <li class="nav-item">
-                                                                            <a class="nav-link ps-5" href="/en-us/create/hook-scripts">Hook Scripts</a>
+                                                                            <a class="nav-link ps-5 active active-page" href="/en-us/create/hook-scripts">Hook Scripts</a>
                                                                         </li>
                                                             </ul>
                                                         </div>
                                                     </li>
-                                                    <li class="nav-item nav-item-blue active">
-                                                        <div class="nav-link nav-link-collapse d-flex active">
-                                                            <button class="btn btn-collapse rounded-0 border-0 ps-3" type="button" data-bs-toggle="collapse" aria-expanded="true" aria-controls="id-d64cc26d-446c-418d-8c96-12f807a72b07" aria-label="collapse or expand navigation" href="#id-d64cc26d-446c-418d-8c96-12f807a72b07"></button>
+                                                    <li class="nav-item nav-item-blue">
+                                                        <div class="nav-link nav-link-collapse d-flex">
+                                                            <button class="btn btn-collapse rounded-0 border-0 ps-3 collapsed" type="button" data-bs-toggle="collapse" aria-expanded="false" aria-controls="id-d64cc26d-446c-418d-8c96-12f807a72b07" aria-label="collapse or expand navigation" href="#id-d64cc26d-446c-418d-8c96-12f807a72b07"></button>
                                                             <a href="/en-us/guides">Guides</a>
                                                         </div>
-                                                        <div class="collapse show" id="id-d64cc26d-446c-418d-8c96-12f807a72b07">
+                                                        <div class="collapse" id="id-d64cc26d-446c-418d-8c96-12f807a72b07">
                                                             <ul class="navbar-nav">
                                                                         <li class="nav-item">
-                                                                            <a class="nav-link ps-5 active active-page" href="/en-us/guides/upgrading-to-chocolatey-v2-v6">Upgrading To Chocolatey Products v2.0.0 and Chocolatey Licensed Extension 6.0.0</a>
+                                                                            <a class="nav-link ps-5" href="/en-us/guides/upgrading-to-chocolatey-v2-v6">Upgrading To Chocolatey Products v2.0.0 and Chocolatey Licensed Extension 6.0.0</a>
                                                                         </li>
                                                                         <li class="nav-item">
                                                                             <div class="nav-link nav-link-collapse d-flex">
@@ -1861,13 +1861,13 @@ gtag('config', 'G-0WDD29GGN2');
                         </div>
                         <div class="col-md-9 col-xl-10 py-3 py-md-5 px-md-4 mx-auto">
                             <div class="container d-xl-none">
-                                <h1 class="title">Upgrading To Chocolatey Products v2.0.0 and Chocolatey Licensed Extension 6.0.0</h1>                 
+                                <h1 class="title">Hook Scripts</h1>                 
 <nav aria-label="breadcrumb">
 	<ol class="breadcrumb">
 			<li class="breadcrumb-item"><a href="/en-us">Chocolatey</a></li>
-			<li class="breadcrumb-item"><a href="/en-us/guides">Guides</a></li>
+			<li class="breadcrumb-item"><a href="/en-us/create">Package Creation</a></li>
 		
-		<li class="breadcrumb-item active" aria-current="page">Upgrading To Chocolatey Products v2.0.0 and Chocolatey Licensed Extension 6.0.0</li>
+		<li class="breadcrumb-item active" aria-current="page">Hook Scripts</li>
 	</ol>
 </nav>
 
@@ -1876,364 +1876,20 @@ gtag('config', 'G-0WDD29GGN2');
                                 <div class="row">
                                     <div id="mainContent" class="anchorjs-container col-xl-10 order-2 order-xl-1">
                                         <div class="d-none d-xl-block">
-                                            <h1 class="title">Upgrading To Chocolatey Products v2.0.0 and Chocolatey Licensed Extension 6.0.0</h1>                 
+                                            <h1 class="title">Hook Scripts</h1>                 
 <nav aria-label="breadcrumb">
 	<ol class="breadcrumb">
 			<li class="breadcrumb-item"><a href="/en-us">Chocolatey</a></li>
-			<li class="breadcrumb-item"><a href="/en-us/guides">Guides</a></li>
+			<li class="breadcrumb-item"><a href="/en-us/create">Package Creation</a></li>
 		
-		<li class="breadcrumb-item active" aria-current="page">Upgrading To Chocolatey Products v2.0.0 and Chocolatey Licensed Extension 6.0.0</li>
+		<li class="breadcrumb-item active" aria-current="page">Hook Scripts</li>
 	</ol>
 </nav>
 
                                         </div>
-                                        <p>The Chocolatey v2.0.0 and v6.0.0 releases are major updates to our products that include additional functionality as well as some functionality that has changed or been removed. The major releases of these products are shown below:</p>
-<ul>
-<li>Chocolatey CLI 2.0.0</li>
-<li>Chocolatey Licensed Extension 6.0.0</li>
-<li>Chocolatey Agent 2.0.0</li>
-<li>Chocolatey GUI 2.0.0</li>
-<li>Chocolatey GUI Licensed Extension 2.0.0</li>
-</ul>
-<h2 id="what-should-you-do-if-you-have-questions">What Should You Do If You Have Questions?</h2>
-<p>If you have any doubts about upgrading, any areas that you are just uncertain about or have any questions at all about this upgrade guide, please don't proceed. Support is available:</p>
-<ul>
-<li><strong>Licensed Customers</strong>. We have a Support Team that is available to help with any issues. Please run <code>choco support</code> to find the support options available to you.</li>
-<li><strong>Free and Open-Source (FOSS) Users</strong>. The Chocolatey Team are usually available to help with community support, but there is also a vast community to help answer questions and help with issues on <a href="https://ch0.co/community">Discord</a>.</li>
-</ul>
-<h2 id="important-information-you-should-know-before-upgrading-your-chocolatey-products">Important Information You Should Know Before Upgrading Your Chocolatey Products</h2>
-<blockquote>
-<p>:choco-warning: <strong>WARNING</strong></p>
-<p>This section provides you with critical information you should be aware of before upgrading the installed Chocolatey product components. If you have any questions, please reach out for <a href="#what-should-you-do-if-you-have-questions">support</a>.</p>
-</blockquote>
-<p>We have listed the bug fixes, features and improvements below that we feel you should be most aware of before upgrading. We have also highlighted critical areas that need you need to carefully consider before you continue upgrading.</p>
-<h3 id="installing-a-specific-chocolatey-version">Installing a Specific Chocolatey Version</h3>
-<p>When you run the <a href="https://chocolatey.org/install">Chocolatey CLI install command</a>, you are installing the latest version of Chocolatey CLI each time. To install a specific version, set the environment variable <code>chocolateyVersion</code> before running the installation command. See the <a href="https://docs.chocolatey.org/en-us/choco/setup#installing-a-particular-version-of-chocolatey">documentation for more information</a>.</p>
-<h3 id="downgrading-to-the-latest-1.x-and-5.x-stable-chocolatey-product-versions">Downgrading to the Latest 1.x and 5.x Stable Chocolatey Product Versions</h3>
-<p>If you have issues after upgrading to the 2.x and 6.x versions of Chocolatey products, please see the <a href="#what-should-you-do-if-you-have-questions">support options available</a>.</p>
-<p>Before downgrading from 2.x and 6.x to 1.x and 5.x of Chocolatey products, please ensure that you understand the <a href="/en-us/chocolatey-components-dependencies-and-support-lifecycle">Support Lifecycle</a>. If you still want to downgrade, follow the steps below:</p>
-<ol>
-<li>If you have Chocolatey GUI and / or Chocolatey GUI Licensed Extension, then uninstall them by running <code>choco uninstall chocolateygui.extension chocolateygui</code> from an elevated session.</li>
-<li>This step requires you to downgrade products depending on what you have installed.
-<ol>
-<li>If you have Chocolatey Agent installed, downgrade it by running <code>choco upgrade chocolatey-agent --version=1.1.2 --allow-downgrade</code> from an elevated session. Note that this will also downgrade both Chocolatey CLI and Chocolatey Licensed Extension.</li>
-<li>If you have Chocolatey Licensed Extension installed, downgrade it by running <code>choco upgrade chocolatey.extension --version 5.0.3 --allow-downgrade</code> from an elevated session. Note that this will also downgrade Chocolatey CLI.</li>
-<li>If you <em>only</em> have Chocolatey CLI installed, downgrade it by running <code>choco upgrade chocolatey --version 1.4.0 --allow-downgrade</code> from an elevated session.</li>
-</ol>
-</li>
-<li>If you uninstalled Chocolatey GUI and / or Chocolatey GUI Licensed Extension, then install the latest 1.x versions by running <code>choco install chocolateygui.extension -y --version=1.0.3</code>.</li>
-</ol>
-<h3 id="sonatype-nexus-repository-sources">Sonatype Nexus Repository Sources</h3>
-<p>The Sonatype Nexus Repository Manager has an issue that can cause it to go into an infinite loop of querying for packages from a NuGet v2 feed. This only affects Sonatype Nexus NuGet v2 feeds as it has been fixed for NuGet v3 feeds.</p>
-<p>To work around this issue, please ensure that you have 29 or less package versions of any Chocolatey product in your internal Sonatype Nexus NuGet v2 feed repository <em>before</em> you start the upgrade.</p>
-<p>Sonatype Nexus <a href="https://help.sonatype.com/repomanager3/nexus-repository-administration/formats/nuget-repositories/grouping-nuget-repositories#GroupingNuGetRepositories-NuGetGroupVersion3APISupport">does not support mixed v2 and v3 NuGet group repositories</a>. If you already use a v2 NuGet group or proxy repository, then you cannot add a v3 repository to the group.</p>
-<h3 id="side-by-side-installs-have-been-removed">Side-By-Side Installs Have Been Removed</h3>
-<p>This is <a href="#side-by-side-installs-have-been-removed-1">discussed in more depth later</a>, but we wanted to highlight it here as it is a very important consideration to make before upgrading.</p>
-<h3 id="package-version-normalization">Package Version Normalization</h3>
-<blockquote>
-<p>:choco-note: <strong>NOTE</strong></p>
-<p><strong>Important information for package maintainers.</strong> The <code>ChocolateyPackageVersion</code> <a href="/en-us/create/functions#environment-variables">environment variable</a> follows the below version normalization. If your package scripts use this variable, and the version specified in the package <code>.nuspec</code> file falls outside the normalized format, then they may not behave as expected. We recommend using specific version numbers within your scripts rather depending on these environment variables.</p>
-</blockquote>
-<p>Due to newer semantic version requirements imposed by the NuGet libraries, some version numbers may appear differently than they did in Chocolatey CLI v1.x. Chocolatey CLI 2.0.0 and later will <a href="/en-us/choco/features/version-number-normalization">normalize version numbers</a> to comply with these new requirements.</p>
-<h3 id="optimizing-performance">Optimizing Performance</h3>
-<p>The implementation of NuGet v3 feeds means that Chocolatey CLI now supports both NuGet v2 and v3 feed, in addition to the idiosyncrasies of some repository managers. Chocolatey CLI determines what repository manager and feed version is being used by querying the source. In some circumstances this can cause Chocolatey CLI and Chocolatey GUI to be slower when determining outdated packages or when calculating a lengthy dependency chain.</p>
-<p>We have thoroughly tested all Chocolatey products and have optimized many areas, but we acknowledge that there is more to do. But we need real-world experiences. Chocolatey values your privacy and our products do not use telemetry. To allow us to improve performance further, we ask for you <a href="#what-should-you-do-if-you-have-questions">reach out to us and provide your performance experiences using Chocolatey products</a>.</p>
-<p>Please subscribe to <a href="https://github.com/chocolatey/choco/issues/3183">this GitHub issue</a> for progress updates on optimization.</p>
-<h2 id="new-features-and-improvements">New Features and Improvements</h2>
-<p>As this is a major release, there are breaking changes, bug fixes, features and quality of life improvements, that you should be aware of <em>before upgrading</em>. We have only included those changes that we believe affects our customers and community. Not every change has been included.</p>
-<p><a href="/en-us/choco/new-in-v2">Read the overview of changes</a>, or you can read the release notes for a detailed list of changes in each product:</p>
-<ul>
-<li><a href="/en-us/choco/release-notes#may-31-2023">Chocolatey CLI</a></li>
-<li><a href="/en-us/licensed-extension/release-notes#may-31-2023">Chocolatey Licensed Extension</a></li>
-<li><a href="/en-us/agent/release-notes#may-31-2023">Chocolatey Agent</a></li>
-<li><a href="/en-us/chocolatey-gui/release-notes#may-31-2023">Chocolatey GUI</a></li>
-<li><a href="/en-us/chocolatey-gui-licensed-extension/release-notes#may-31-2023">Chocolatey GUI Licensed Extension</a></li>
-</ul>
-<h3 id="net-framework-4.8-required">.NET Framework 4.8 Required</h3>
-<p>In previous version of Chocolatey CLI, .NET Framework 4.0 was a minimum requirement. This has now changed to be .NET Framework 4.8.</p>
-<p>The Chocolatey CLI installation process will try to install .NET Framework 4.8 if it's not already present on the computer. This will require a reboot before Chocolatey CLI can then be installed and means that the installation process will have to be started again.</p>
-<p>We recommend you install .NET Framework 4.8 and reboot, before installing or upgrading to Chocolatey CLI v2.0.0. If you are installing Chocolatey in a Docker container, please use an image that already has .NET 4.8 installed or use the <a href="https://hub.docker.com/r/chocolatey/choco">official Chocolatey CLI Docker image</a>.</p>
-<p>If you are unable to upgrade to .NET Framework 4.8, <strong>we do not recommend</strong> you upgrade to Chocolatey CLI version 2.0.0 at this time. Please see our <a href="/en-us/chocolatey-components-dependencies-and-support-lifecycle">Support Lifecycle</a> for Chocolatey products.</p>
-<h3 id="nuget-v3-feed-support-added">NuGet v3 Feed Support Added</h3>
-<p>Chocolatey CLI has supported NuGet v2 feeds since its earliest days. But, like all things, time and technology marches on and NuGet v3 feeds provide new opportunities for package management. Chocolatey CLI now supports NuGet v3 package feeds and listed below are some of the repository managers that also support them:</p>
-<ul>
-<li><a href="https://github.com/features/packages">GitHub Packages</a></li>
-<li><a href="https://docs.gitlab.com/ee/user/packages/package_registry/">GitLab Package Registry</a> (<a href="https://github.com/chocolatey/choco/issues/3217#issuecomment-1596710688">only feeds without authentication</a>)</li>
-<li><a href="https://www.sonatype.com/products/sonatype-nexus-repository">Sonatype Nexus</a></li>
-<li><a href="https://jfrog.com/artifactory/">JFrog Artifactory</a></li>
-<li><a href="https://inedo.com/proget">ProGet</a></li>
-</ul>
-<p>Adding NuGet v3 feed support to Chocolatey CLI has been a long-term goal that we are delighted to have completed. It required a substantial development effort and is a major change to the Chocolatey CLI internals.</p>
-<h3 id="semver-2.0.0-support">SemVer 2.0.0 Support</h3>
-<blockquote>
-<p>:choco-warning: <strong>WARNING</strong></p>
-<p>The Chocolatey Community Repository does not support SemVer 2.0.0 at this time, so this is supported only on third-party repositories.</p>
-</blockquote>
-<p>We have added support for <a href="https://semver.org/spec/v2.0.0.html">SemVer 2.0.0</a> that allows previously invalid pre-release version numbering such as <code>1.0.1-alpha.23</code> to now be used alongside the current four part version numbering (<code>1.2.3.4</code>). The only constraint on the version number segments is that they must fit into the range <code>0</code> to <code>2147483647</code>.</p>
-<h3 id="supported-operating-systems">Supported Operating Systems</h3>
-<p>We have clarified the Operating Systems we support and updated our <a href="/en-us/chocolatey-components-dependencies-and-support-lifecycle">Support Lifecycle</a> documentation.</p>
-<h3 id="side-by-side-installs-have-been-removed-1">Side-By-Side Installs Have Been Removed</h3>
-<p>Side-by-side installs were introduced in Chocolatey CLI to help with the challenge of installing multiple versions of the same package. As use of the functionality grew and expanded beyond the boundaries of the narrow use case that it was intended to help with, the number of users running into issues with it also increased. The use of side-by-side installs began to cause more problems that it solved, and the decision was made to remove it from version 2.0.0 of Chocolatey CLI.</p>
-<p>We do have plans for similar functionality in a future release that will allow multiple versions of a package to be installed, but do not have any timescale for that as yet.</p>
-<p>As Chocolatey CLI 2.0.0 does not support side-by-side installs, you must uninstall packages installed this way, and then install them again. To determine if you have packages that are installed as side-by-side, you must be running a version of Chocolatey CLI that supports them. We recommend Chocolatey CLI 1.4.0. Run <code>choco list --local-only --all-versions</code> and you will see output similar to this:</p>
-<p><img src="/assets/images/choco-list-showing-side-by-side-install.png" alt="choco list command showing a side-by-side install of gitreleasemanager.portable package"></p>
-<p>In the example above, <code>gitreleasemanager.portable</code> has two versions installed: 0.12.1 and 0.13.0. To uninstall both versions, run <code>choco uninstall gitreleasemanager.portable -y</code>. There are two important points to make:</p>
-<ol>
-<li>The uninstallation of one of those packages may fail. However, it will still have been uninstalled. To confirm that, run <code>choco list --local-only --all-versions</code> again. If the package is still shown as installed, run the above uninstall command again.</li>
-<li>The package folder is unlikely to have been removed correctly (this is a bug in the side-by-side management). Using the example above this will be <code>$env:chocolateyInstall\lib\gitreleasemanager.portable</code>. If you run <code>choco list --local-only --all-versions</code> and the package is not listed, the package folder, <code>$env:chocolateyInstall\lib\gitreleasemanager.portable</code> can be safely deleted. <strong>Please note that you should only remove <code>$env:chocolateyInstall\lib\gitreleasemanager.portable</code> and not any other folder. If in doubt, save a backup copy before deleting it.</strong></li>
-</ol>
-<p>Once this is complete, you can install the package again, without side-by-side, by running <code>choco install gitreleasemanager.portable</code>.</p>
-<p>If you need side-by-side functionality, or cannot uninstall packages installed side-by-side, <strong>we do not recommend</strong> you upgrade to Chocolatey CLI version 2.0.0 at this time. Please see our <a href="/en-us/chocolatey-components-dependencies-and-support-lifecycle">Support Lifecycle</a> for Chocolatey products.</p>
-<h3 id="the-list-command-now-lists-local-packages-only-and-the-local-only-and-lo-options-have-been-removed">The List Command Now Lists Local Packages Only and the <code>--local-only</code> and <code>-lo</code> Options Have Been Removed</h3>
-<p>In version 1.0.0 of Chocolatey CLI, we added notices that the <code>choco list</code> command will list only local packages, and deprecated the <code>-l</code> and its alias options. See this <a href="https://github.com/chocolatey/choco/issues/158">GitHub issue for more information</a>. We have also removed the <code>-a</code> and its alias options from the <code>list</code> command as it no longer made sense to have that option once side-by-side installs were removed.</p>
-<p>To summarize, the following options were removed:</p>
-<ul>
-<li><code>-l</code></li>
-<li><code>-lo</code></li>
-<li><code>--lo</code></li>
-<li><code>--local</code></li>
-<li><code>--localonly</code></li>
-<li><code>--local-only</code></li>
-<li><code>-a</code></li>
-<li><code>--all</code></li>
-<li><code>--allversions</code></li>
-<li><code>--all-versions</code></li>
-</ul>
-<p>If you use <code>choco list</code> commands in your automations, scripts or at the command-line, please ensure you do not also have <code>-l</code>, <code>-a</code> or one of their aliases. If you fail to remove these options, an error will be displayed, and also added to the logs:</p>
-<pre><code class="language-text">Invalid argument --local-only. This argument has been removed from the list command and cannot be used.
-</code></pre>
-<p>For automations, we recommend that you use the <code>-r</code>, or <code>--limit-output</code> options as it provides machine parsable output. As an example, instead of using <code>choco list --local-only</code> you would use <code>choco list --limit-output</code>. In PowerShell <code>choco list --limit-output | ConvertFrom-Csv -Delimiter '|' -Header PackageId,PackageVersion</code> will return a PowerShell object you can more easily interact with in your automations.</p>
-<p>To ensure we do not break any existing automation, integrations or scripts using the <code>--limit-output</code> or <code>-r</code> along with <code>-l</code>, <code>-a</code> or one of their aliases, will continue to run and <strong>will not produce an error</strong>. Only a warning will be added to the logs. In a future release this will produce an error, so please ensure you remove <code>-l</code>, <code>-a</code>, and aliases, from any automations or scripts that you have.</p>
-<h3 id="the-list-command-cannot-be-used-to-query-remote-sources">The List Command Cannot Be Used to Query Remote Sources</h3>
-<p>While the <code>choco list</code> command is still used to query <a href="/en-us/choco/commands/install#alternative-sources">alternative sources</a>, it cannot be used to query remote sources. You must instead use the <code>choco search</code> command to query these remote sources. If you are currently using the <code>choco list</code> command for this, you must use <code>choco search</code>. If you are using <code>--limit-output</code> or <code>-r</code> as part of your command, this will continue to behave as normal. For example, if you used <code>choco list --source="'&lt;SOURCE URL&gt;'"</code>, you should use <code>choco search --source="'&lt;SOURCE URL&gt;'"</code> instead.</p>
-<p>Please ensure you replace <code>choco list</code> with <code>choco search</code> in your automations and scripts as these will no longer work.</p>
-<h3 id="unresolved-dependency-constraint-warnings">Unresolved Dependency Constraint Warnings</h3>
-<p>When installing or upgrading one or more packages you may see a warning outputted the console similar to:</p>
-<pre><code class="language-text">[NuGet] One or more unresolved package dependency constraints detected in the Chocolatey lib folder. All dependency constraints must be resolved to add or update packages. If these packages are being updated this message may be ignored, if not the following error(s) may be blocking the current package operation: 'hexchat 2.16.0 constraint: vcredist2015 (&gt;= 14.0.24215.20170201)', 'python311 3.11.3 constraint: vcredist2015 (&gt;= 14.0.24215.20170201)'
-</code></pre>
-<p>This warning happens due to the more strict enforcement that Chocolatey CLI v2.0.0 do for package dependency version ranges.
-When Chocolatey CLI detects that there is a possibility that a package may break a version range, it will output a warning similar to the above message. Most of the time you may ignore these warnings. However, in case of package failures, it was decided that to give enough information to the user to determine whether the package failed due to a broken version range, we would not hide this warning.
-If a package fails installation or upgrade due to dependency constraints, please examine the warning to see what package or constraint may be the reason for the failure. Such a failure will happen before installation scripts are run or packages downloaded.</p>
-<h3 id="chocolatey-shortcut-shims-removed">Chocolatey Shortcut Shims Removed</h3>
-<p>In addition to the <a href="https://github.com/chocolatey/choco/issues/2468">Chocolatey shortcut shims removed in version 1.0.0</a>, we have removed the <a href="https://github.com/chocolatey/choco/issues/2641">remaining ones</a>. The shims removed (including the earlier ones) and their equivalent full commands are:</p>
-<ul>
-<li><code>chocolatey</code>. Use <code>choco</code>.</li>
-<li><code>cinst</code>. Use <code>choco install</code>.</li>
-<li><code>clist</code>. Use <code>choco list</code>.</li>
-<li><code>cpush</code>. Use <code>choco push</code>.</li>
-<li><code>cuninst</code>. Use <code>choco uninstall</code>.</li>
-<li><code>cup</code>. Use <code>choco upgrade</code>.</li>
-<li><code>cver</code>. Use <code>choco --version</code>.</li>
-</ul>
-<p>If you want to add these shortcuts back, you can create a PowerShell function or batch file to provide the same functionality. An example PowerShell function, you could add to your PowerShell profile, would be:</p>
-<pre><code class="language-powershell">function cinst { choco install $args }
-</code></pre>
-<h3 id="removed-the-chocolatey-community-repository-as-the-default-push-source">Removed the Chocolatey Community Repository as the Default Push Source</h3>
-<p>The Chocolatey Community Repository, <a href="https://push.chocolatey.org/">https://push.chocolatey.org</a>, has been the default source for pushing packages to with Chocolatey CLI since the very first days. This has led to some accidental packages being pushed to the repository, rather than an internal organizational repository, that have had to be removed.</p>
-<p>As the vast majority of packages being pushed with Chocolatey CLI are not to the Chocolatey Community Repository, we have removed the Chocolatey Community Repository as the default push source. A new configuration value, <code>defaultPushSource</code> has been added that must be set if you want a default source to push to when not specifying a source with the <code>choco push</code> command. To set a default source, run <code>choco config set --name="'defaultPushSource'" --value="'&lt;PUSH URL&gt;'"</code>, from an elevated session, where <code>&lt;PUSH URL&gt;</code> is <code>https://push.chocolatey.org</code> for the Chocolatey Community Repository, or your internal repository source.</p>
-<p>Alternatively, you can specify the push source when pushing a package by running <code>choco push --source="'&lt;PUSH URL&gt;'"</code> where <code>&lt;PUSH URL&gt;</code> is the repository source URL.</p>
-<h3 id="modified-api-key-commands">Modified API Key Commands</h3>
-<p>To make working with Chocolatey CLI consistent, we have changed the <code>choco apikey</code> command to add the following subcommands:</p>
-<ul>
-<li><code>add</code>. Add an API key.</li>
-<li><code>remove</code>. Remove an API key.</li>
-<li><code>list</code>. List API keys.</li>
-</ul>
-<p>As the <code>remove</code> subcommand has been added, we have removed the <code>--remove</code> option.</p>
-<h2 id="upgrading-chocolatey-products">Upgrading Chocolatey Products</h2>
-<blockquote>
-<p>:choco-warning: <strong>WARNING</strong></p>
-<p>The Chocolatey products are inter-dependent on each other and all the products you have installed <em>must</em> be upgraded. You cannot upgrade one product and leave the others at older versions.</p>
-</blockquote>
-<h3 id="what-to-do-if-upgrading-fails">What To Do If Upgrading Fails</h3>
-<p>The first thing you should do is not panic! Please reach out for <a href="#what-should-you-do-if-you-have-questions">support</a>.</p>
-<h3 id="test.test.test">Test. Test. Test.</h3>
-<p>We recommend that you test the upgrade process on a small sample of non-production computers to ensure it works for your environment and that you are comfortable with it. <em>Always</em> test any upgrades on a small sample of computers before deploying to a wider group, or to production.</p>
-<h3 id="latest-1.x-and-5.x-stable-chocolatey-products">Latest 1.x and 5.x Stable Chocolatey Products</h3>
-<p>To upgrade, you need to ensure you are at the latest stable version of the Chocolatey products that are installed on your computer. These are:</p>
-<ul>
-<li>Chocolatey CLI 1.4.0</li>
-<li>Chocolatey Licensed Extension 5.0.3</li>
-<li>Chocolatey Agent 1.1.2</li>
-<li>Chocolatey GUI 1.1.3</li>
-<li>Chocolatey GUI Licensed Extension 1.0.3</li>
-</ul>
-<p>There are two steps to go through, depending on whether you have any of the Chocolatey 2.0.0 or 6.0.0 pre-release products installed.</p>
-<video class="img-fluid" width="800" height="594" poster="/assets/images/chocolatey-upgrade-to-2-banner.png" controls="" preload="none">
-   <source src="/assets/images/chocolatey-upgrade-to-2.mp4" type="video/mp4">
-</video>
-<h3 id="upgrade-using-the-command-line">Upgrade Using the Command Line</h3>
-<blockquote>
-<p>:choco-warning: <strong>WARNING</strong></p>
-<p>We recommend that you test the upgrade process on a small sample of non-production computers to ensure it works for your environment and that you are comfortable with it. <em>Always</em> test any upgrades on a small sample of computers before deploying to a wider group, or to production.</p>
-</blockquote>
-<p>If you are not using Chocolatey Central Management, Intune or a configuration management tool such as Ansible or Puppet, you will likely be using the command line to upgrade Chocolatey products.</p>
-<h4 id="step-1-get-to-the-latest-stable-1.x-and-5.x-product-versions">Step 1 - Get to the Latest Stable 1.x and 5.x Product Versions</h4>
-<blockquote>
-<p>:choco-warning: <strong>WARNING</strong></p>
-<p>If you need to specify a <code>--source</code> option on the command line, please make sure you reference only one source value. For example, <code>--source="'my-internal-repo'"</code> and not <code>--source="'my-internal-repo;chocolatey.licensed'"</code>. Specifying multiple sources for this specific upgrade may cause the Chocolatey product packages to not be found. Note that this only affects the upgrade to version 2.0.0 or 6.0.0 of the Chocolatey products and not future packages you may install or upgrade.</p>
-</blockquote>
-<p>If you have a pre-release version of the Chocolatey GUI 2.0.0-alpha or 2.0.0-beta, please uninstall it before continuing by running <code>choco uninstall chocolateygui</code>, from an elevated session. We will install it again in later steps. Once that is complete, follow the steps below:</p>
-<ol>
-<li><p>Run <code>choco upgrade chocolatey --version 1.4.0 --allow-downgrade --source="'&lt;PACKAGE SOURCE&gt;'"</code>, from an elevated command-line session, where <code>&lt;PACKAGE SOURCE&gt;</code> is a <em>single source</em> you install packages from.</p>
-<ol>
-<li>If you have a pre-release version of Chocolatey GUI 2.0.0-alpha or 2.0.0-beta installed, the upgrade of the <code>chocolateygui</code> package may fail. Please uninstall it by running <code>choco uninstall chocolateygui</code> and then <code>choco install chocolateygui --version 1.1.3 --source="'&lt;PACKAGE SOURCE&gt;'"</code> from an elevated session, where <code>&lt;PACKAGE SOURCE&gt;</code> is a <em>single source</em> you install packages from.</li>
-</ol>
-</li>
-<li><p>Run <code>choco list --local-only</code> and ensure the <a href="#latest-1.x-and-5.x-stable-chocolatey-products">product versions match the above</a>. If they do not, you may need to install the correct versions of those specific products by running <code>choco install &lt;PRODUCT NAME&gt; --version &lt;PRODUCT VERSION&gt; --allow-downgrade --source="'&lt;PACKAGE SOURCE&gt;'"</code>, from an elevated command-line session, where <code>&lt;PACKAGE SOURCE&gt;</code> is a <em>single source</em> you install packages from.</p>
-</li>
-</ol>
-<h4 id="step-2-upgrade-to-the-new-2.0.0-and-6.0.0-product-versions">Step 2 - Upgrade to the New 2.0.0 and 6.0.0 Product Versions</h4>
-<blockquote>
-<p>:choco-warning: <strong>WARNING</strong></p>
-<p>If you need to specify a <code>--source</code> option on the command line, please make sure you reference only one source value. For example, <code>--source="'my-internal-repo'"</code> and not <code>--source="'my-internal-repo;chocolatey.licensed'"</code>. Specifying multiple sources for this specific upgrade may cause the Chocolatey product packages to not be found. Note that this only affects the upgrade to version 2.0.0 or 6.0.0 of the Chocolatey products and not future packages you may install or upgrade.</p>
-</blockquote>
-<p>Once you have completed step 1 above, you will be ready to start the upgrade to the latest version of Chocolatey products. To start, run <code>choco upgrade chocolatey --source="'&lt;PACKAGE SOURCE&gt;'"</code>, from an elevated command-line session, where <code>&lt;PACKAGE SOURCE&gt;</code> is a <em>single source</em> you install packages from.</p>
-<h3 id="upgrade-using-chocolatey-central-management-deployments">Upgrade Using Chocolatey Central Management Deployments</h3>
-<blockquote>
-<p>:choco-warning: <strong>WARNING</strong></p>
-<p>We recommend that you test the upgrade process on a small sample of non-production computers to ensure it works for your environment and that you are comfortable with it. <em>Always</em> test any upgrades on a small sample of computers before deploying to a wider group, or to production.</p>
-</blockquote>
-<h4 id="step-1-get-to-the-latest-stable-1.x-and-5.x-product-versions-1">Step 1 - Get to the Latest Stable 1.x and 5.x Product Versions</h4>
-<p>If your computers have the latest versions of Chocolatey products installed, you can immediately move onto <a href="#step-2-upgrade-to-the-new-2.0.0-and-6.0.0-product-versions-1">Step 2</a>.</p>
-<p>The Chocolatey 2.0.0 and 6.0.0 pre-release versions were not recommended for production environments, and we haven't provided steps to downgrade to the latest 1.x and 5.x stable releases here. If you have the pre-release versions installed on some test computers, please follow the <a href="#upgrade-using-the-command-line">steps above</a> to downgrade to the 1.x and 5.x stable versions paying particular attention to the note on downgrading Chocolatey GUI.</p>
-<blockquote>
-<p>:choco-warning: <strong>WARNING</strong></p>
-<p>If you need to specify a <code>--source</code> option in the Advanced Deployment Step PowerShell script, please make sure you reference only one source value. For example, <code>--source="'my-internal-repo'"</code> and not <code>--source="'my-internal-repo;chocolatey.licensed'"</code>. Specifying multiple sources for this specific upgrade may cause the Chocolatey product packages to not be found. Note that this only affects the upgrade to version 2.0.0 or 6.0.0 of the Chocolatey products and not future packages you may install or upgrade.</p>
-</blockquote>
-<ol>
-<li><p>In Chocolatey Central Management, ensure you have a group of computers to deploy to, and if necessary <a href="/en-us/central-management/usage/website/groups">create one</a>.</p>
-</li>
-<li><p><a href="/en-us/central-management/usage/website/deployments">Create an Advanced Deployment Step</a> with the group of computers to deploy the upgrade to the latest stable 1.x and 5.x versions of Chocolatey products. The Deployment Plan will have 2 steps:</p>
-<ol>
-<li>The first Deployment Step will upgrade Chocolatey Agent and it's required dependencies. As communication with Chocolatey Central Management takes place through Chocolatey Agent, we need to ensure the service is running and so the upgrade is done by a Windows scheduled task. The Advanced Deployment Step PowerShell script should be:</li>
-</ol>
-<pre><code class="language-powershell">$delayInMinutes = 1
-# If using an internal repository to install Chocolatey Agent, replace `chocolatey.licensed` below
-# with the name or URL of your internally configured source.
-choco upgrade chocolatey-agent --version 1.1.2 --source="'chocolatey.licensed'"
-# Ensure the deployment task registers as failed if the installation failed, and skip registering the
-# scheduled task.
-if ($LASTEXITCODE -ne 0) {
-    Write-Error 'The upgrade failed!'
-    exit $LASTEXITCODE
-}
-# Restart the Agent service after the preset delay time via a scheduled task.
-$trigger = New-ScheduledTaskTrigger -Once -At (Get-Date).AddMinutes($delayInMinutes)
-$action = New-ScheduledTaskAction -Execute 'powershell.exe' -Argument "-WindowStyle Hidden -Command Restart-Service chocolatey-agent"
-$principal = New-ScheduledTaskPrincipal -GroupId Administrators -RunLevel Highest
-$settings = New-ScheduledTaskSettingsSet -Hidden
-Register-ScheduledTask -Action $action -Trigger $trigger -TaskName "restart chocolatey-agent" -Description "Upgrade Chocolatey Agent" -Principal $principal -Settings $settings -Verbose:$false
-</code></pre>
-<p>If you use an internal repository, change the <code>--source="'chocolatey.licensed'"</code> on line 4 of the script above, to your internal repository location. For further information see the <a href="/en-us/agent/upgrade#using-chocolatey-central-management-to-upgrade-chocolatey-agent">documentation on upgrading Chocolatey Agent using Chocolatey Central Management</a>.</p>
-<ol start="2">
-<li>The second Deployment Step ensures that all other Chocolatey products are now at their latest 1.x and 5.x versions. The Advanced Deployment Step PowerShell script should be <code>choco upgrade chocolatey --version 1.4.0 --source="'chocolatey.licensed'"</code>. If you use an internal repository, change the <code>--source="'chocolatey.licensed'"</code> in the command, to your internal repository location.</li>
-</ol>
-</li>
-</ol>
-<p>Once the Deployment Plan is complete, move on to the next step.</p>
-<h4 id="step-2-upgrade-to-the-new-2.0.0-and-6.0.0-product-versions-1">Step 2 - Upgrade to the New 2.0.0 and 6.0.0 Product Versions</h4>
-<blockquote>
-<p>:choco-warning: <strong>WARNING</strong></p>
-<p>If you need to specify a <code>--source</code> option in the Advanced Deployment Step PowerShell script, please make sure you reference only one source value. For example, <code>--source="'my-internal-repo'"</code> and not <code>--source="'my-internal-repo;chocolatey.licensed'"</code>. Specifying multiple sources for this specific upgrade may cause the Chocolatey product packages to not be found. Note that this only affects the upgrade to version 2.0.0 or 6.0.0 of the Chocolatey products and not future packages you may install or upgrade.</p>
-</blockquote>
-<p>Once you have completed step 1 above, you will be ready to start the upgrade to the latest version of Chocolatey products:</p>
-<ol>
-<li><p>Using the same group used in Step 1 above, create an <a href="/en-us/central-management/usage/website/deployments">Advanced Deployment Plan</a> with two Deployment Steps:</p>
-<ol>
-<li><p>The first Deployment Step will upgrade Chocolatey Agent through a Windows scheduled task. Add the <a href="/en-us/agent/upgrade#using-chocolatey-central-management-to-upgrade-chocolatey-agent">recommended code</a> as the PowerShell script. Note that this code is different from above. If you use an internal repository, change the <code>--source 'chocolatey.licensed'</code> in the command, to your internal repository location.</p>
-</li>
-<li><p>The second Deployment Step ensures that all other Chocolatey products are now at their latest stable 2.0.0 and 6.0.0 versions. The Advanced Deployment Step PowerShell script should be <code>choco upgrade chocolatey --source="'chocolatey.licensed'"</code>. If you use an internal repository, change the <code>--source="'chocolatey.licensed'"</code> in the command, to your internal repository location.</p>
-</li>
-</ol>
-</li>
-</ol>
-<p>Once the Deployment Plan is complete, all Chocolatey products will be upgraded to their latest 2.0.0 and 6.0.0 versions.</p>
-<h3 id="upgrade-using-microsoft-intune">Upgrade Using Microsoft Intune</h3>
-<blockquote>
-<p>:choco-warning: <strong>WARNING</strong></p>
-<p>We recommend that you test the upgrade process on a small sample of non-production computers to ensure it works for your environment and that you are comfortable with it. <em>Always</em> test any upgrades on a small sample of computers before deploying to a wider group, or to production.</p>
-</blockquote>
-<p>Please see the specific documentation on <a href="/en-us/licensed-extension/intune/upgrade">upgrading Chocolatey products with Intune</a>.</p>
-<h3 id="other-integrations">Other Integrations</h3>
-<blockquote>
-<p>:choco-warning: <strong>WARNING</strong></p>
-<p>You <strong>must</strong> upgrade Chocolatey CLI to 1.4.0 before you start your upgrade to the Chocolatey CLI 2.0.0 or Chocolatey Licensed Extension 6.0.0 versions. Failure to do this may result in Chocolatey products being non-functional.</p>
-</blockquote>
-<blockquote>
-<p>:choco-warning: <strong>WARNING</strong></p>
-<p>We recommend that you test the upgrade process on a small sample of non-production computers to ensure it works for your environment and that you are comfortable with it. <em>Always</em> test any upgrades on a small sample of computers before deploying to a wider group, or to production.</p>
-</blockquote>
-<blockquote>
-<p>:choco-warning: <strong>WARNING</strong></p>
-<p>If you need to specify a <code>--source</code> option in the integration, please make sure you reference only one source value. For example, <code>--source="'my-internal-repo'"</code> and not <code>--source="'my-internal-repo;chocolatey.licensed'"</code>. Specifying multiple sources for this specific upgrade may cause the Chocolatey product packages to not be found. Note that this only affects the upgrade to version 2.0.0 or 6.0.0 of the Chocolatey products and not future packages you may install or upgrade.</p>
-</blockquote>
-<p>There are many ways to manage Chocolatey packages using integrations such as <a href="https://galaxy.ansible.com/chocolatey/chocolatey">Ansible</a> and <a href="https://forge.puppet.com/modules/puppetlabs/chocolatey/readme">Puppet</a>. We are unable to list specific steps for each one, but the steps to follow match those above:</p>
-<ol>
-<li><p>Upgrade or downgrade as necessary, to ensure you are on the <a href="#latest-1.x-and-5.x-stable-chocolatey-products">latest 1.x and 5.x versions of Chocolatey products</a>. It is important that you do not skip this step.</p>
-</li>
-<li><p>Upgrade to the latest stable 2.0.0 and 6.0.0 Chocolatey product versions.</p>
-</li>
-</ol>
-<h2 id="updating-automation-scripts-for-chocolatey-v2.0.0-migration">Updating Automation Scripts For Chocolatey V2.0.0 Migration</h2>
-<p>The breaking changes introduced with the release of Chocolatey CLI V2.0.0 and Chocolatey Licensed Extension 6.0.0 mean that any automations that you are currently using will need to be updated.</p>
-<h3 id="interrogating-local-packages">Interrogating local packages</h3>
-<p>With the Chocolatey CLI v2.0.0 release the <code>choco list</code> command now only reports on locally-installed Chocolatey packages. If you are using the <code>-lo</code> or <code>--local-only</code> arguments with your <code>choco list</code> commands, these should be removed. If you fail to remove this argument, a warning will be displayed, which could cause your scripts to fail. For interrogating locally-installed packages we recommend <code>choco list</code> or <code>choco list --limit-output</code>, if you are looking for a more parsable format (recommended).</p>
-<p>In PowerShell <code>choco list --limit-output | ConvertFrom-Csv -Delimiter '|' -Header PackageId,PackageVersion</code> will return a PowerShell object you can more easily interact with in your automations.</p>
-<h3 id="querying-remote-sources">Querying Remote Sources</h3>
-<p>With the Chocolatey CLI v2.0.0 release it is now required to use the <code>choco search</code> command to query remote package information. If you are currently using the <code>choco list</code> command for this, update your automations to use <code>choco search</code>. If you are using <code>--limit-output</code> or <code>-r</code> as part of your command, this will continue to behave as normal.</p>
-<h2 id="questions">Questions?</h2>
-<p>If you have any doubts about upgrading, any areas that you are just uncertain about or have any questions at all about this upgrade guide, please don't proceed but instead <a href="#what-should-you-do-if-you-have-questions">reach out for support</a>.</p>
+                                        <p>Information for using hooks can be found in the <a href="/en-us/features/hook">documentation</a>.</p>
 
                                     </div>
-                                            <div id="rightSidebarNav" class="col-xl-2 ps-xl-3 order-1 order-xl-2">
-                                                <button class="btn btn-link btn-collapse fw-bold w-100 d-xl-none mb-2" type="button" data-bs-toggle="collapse" data-bs-target="#rightSidebar" aria-expanded="false" aria-controls="rightSidebar">Jump to Section</button>
-                                                <div id="rightSidebar" class="sticky-xl-top collapse collapse-lg">
-                                                    <div class="card card-body py-0 px-xl-0 mb-3 border-0">
-                                                            <p class="fw-bold pt-3"><a href="https://github.com/chocolatey/docs/edit/master/input/en-us/guides/upgrading-to-chocolatey-v2-v6.md"><i class="fa-solid fa-pencil" aria-hidden="true"></i> Edit This Page</a></p>
-                                                            <hr class="m-0">
-                                                        <p class="fw-bold pt-3 mb-2">On This Page</p>
-                                                        <ul class="nav nav-scrollspy flex-column pb-3">
-                                                                <li class="nav-item"><a class="nav-link " href="#what-should-you-do-if-you-have-questions">What Should You Do If You Have Questions?</a></li>
-                                                                <li class="nav-item"><a class="nav-link " href="#important-information-you-should-know-before-upgrading-your-chocolatey-products">Important Information You Should Know Before Upgrading Your Chocolatey Products</a></li>
-                                                                <li class="nav-item"><a class="nav-link ps-4" href="#installing-a-specific-chocolatey-version">Installing a Specific Chocolatey Version</a></li>
-                                                                <li class="nav-item"><a class="nav-link ps-4" href="#downgrading-to-the-latest-1.x-and-5.x-stable-chocolatey-product-versions">Downgrading to the Latest 1.x and 5.x Stable Chocolatey Product Versions</a></li>
-                                                                <li class="nav-item"><a class="nav-link ps-4" href="#sonatype-nexus-repository-sources">Sonatype Nexus Repository Sources</a></li>
-                                                                <li class="nav-item"><a class="nav-link ps-4" href="#side-by-side-installs-have-been-removed">Side-By-Side Installs Have Been Removed</a></li>
-                                                                <li class="nav-item"><a class="nav-link ps-4" href="#package-version-normalization">Package Version Normalization</a></li>
-                                                                <li class="nav-item"><a class="nav-link ps-4" href="#optimizing-performance">Optimizing Performance</a></li>
-                                                                <li class="nav-item"><a class="nav-link " href="#new-features-and-improvements">New Features and Improvements</a></li>
-                                                                <li class="nav-item"><a class="nav-link ps-4" href="#net-framework-4.8-required">.NET Framework 4.8 Required</a></li>
-                                                                <li class="nav-item"><a class="nav-link ps-4" href="#nuget-v3-feed-support-added">NuGet v3 Feed Support Added</a></li>
-                                                                <li class="nav-item"><a class="nav-link ps-4" href="#semver-2.0.0-support">SemVer 2.0.0 Support</a></li>
-                                                                <li class="nav-item"><a class="nav-link ps-4" href="#supported-operating-systems">Supported Operating Systems</a></li>
-                                                                <li class="nav-item"><a class="nav-link ps-4" href="#side-by-side-installs-have-been-removed-1">Side-By-Side Installs Have Been Removed</a></li>
-                                                                <li class="nav-item"><a class="nav-link ps-4" href="#the-list-command-now-lists-local-packages-only-and-the-local-only-and-lo-options-have-been-removed">The List Command Now Lists Local Packages Only and the --local-only and -lo Options Have Been Removed</a></li>
-                                                                <li class="nav-item"><a class="nav-link ps-4" href="#the-list-command-cannot-be-used-to-query-remote-sources">The List Command Cannot Be Used to Query Remote Sources</a></li>
-                                                                <li class="nav-item"><a class="nav-link ps-4" href="#unresolved-dependency-constraint-warnings">Unresolved Dependency Constraint Warnings</a></li>
-                                                                <li class="nav-item"><a class="nav-link ps-4" href="#chocolatey-shortcut-shims-removed">Chocolatey Shortcut Shims Removed</a></li>
-                                                                <li class="nav-item"><a class="nav-link ps-4" href="#removed-the-chocolatey-community-repository-as-the-default-push-source">Removed the Chocolatey Community Repository as the Default Push Source</a></li>
-                                                                <li class="nav-item"><a class="nav-link ps-4" href="#modified-api-key-commands">Modified API Key Commands</a></li>
-                                                                <li class="nav-item"><a class="nav-link " href="#upgrading-chocolatey-products">Upgrading Chocolatey Products</a></li>
-                                                                <li class="nav-item"><a class="nav-link ps-4" href="#what-to-do-if-upgrading-fails">What To Do If Upgrading Fails</a></li>
-                                                                <li class="nav-item"><a class="nav-link ps-4" href="#test.test.test">Test. Test. Test.</a></li>
-                                                                <li class="nav-item"><a class="nav-link ps-4" href="#latest-1.x-and-5.x-stable-chocolatey-products">Latest 1.x and 5.x Stable Chocolatey Products</a></li>
-                                                                <li class="nav-item"><a class="nav-link ps-4" href="#upgrade-using-the-command-line">Upgrade Using the Command Line</a></li>
-                                                                <li class="nav-item"><a class="nav-link ps-5" href="#step-1-get-to-the-latest-stable-1.x-and-5.x-product-versions">Step 1 - Get to the Latest Stable 1.x and 5.x Product Versions</a></li>
-                                                                <li class="nav-item"><a class="nav-link ps-5" href="#step-2-upgrade-to-the-new-2.0.0-and-6.0.0-product-versions">Step 2 - Upgrade to the New 2.0.0 and 6.0.0 Product Versions</a></li>
-                                                                <li class="nav-item"><a class="nav-link ps-4" href="#upgrade-using-chocolatey-central-management-deployments">Upgrade Using Chocolatey Central Management Deployments</a></li>
-                                                                <li class="nav-item"><a class="nav-link ps-5" href="#step-1-get-to-the-latest-stable-1.x-and-5.x-product-versions-1">Step 1 - Get to the Latest Stable 1.x and 5.x Product Versions</a></li>
-                                                                <li class="nav-item"><a class="nav-link ps-5" href="#step-2-upgrade-to-the-new-2.0.0-and-6.0.0-product-versions-1">Step 2 - Upgrade to the New 2.0.0 and 6.0.0 Product Versions</a></li>
-                                                                <li class="nav-item"><a class="nav-link ps-4" href="#upgrade-using-microsoft-intune">Upgrade Using Microsoft Intune</a></li>
-                                                                <li class="nav-item"><a class="nav-link ps-4" href="#other-integrations">Other Integrations</a></li>
-                                                                <li class="nav-item"><a class="nav-link " href="#updating-automation-scripts-for-chocolatey-v2.0.0-migration">Updating Automation Scripts For Chocolatey V2.0.0 Migration</a></li>
-                                                                <li class="nav-item"><a class="nav-link ps-4" href="#interrogating-local-packages">Interrogating local packages</a></li>
-                                                                <li class="nav-item"><a class="nav-link ps-4" href="#querying-remote-sources">Querying Remote Sources</a></li>
-                                                                <li class="nav-item"><a class="nav-link " href="#questions">Questions?</a></li>
-                                                        </ul>
-                                                    </div>
-                                                </div>
-                                            </div>
                                 </div>
                             </div>
                         </div>
