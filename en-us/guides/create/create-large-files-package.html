@@ -10,21 +10,21 @@ gtag('config', 'G-0WDD29GGN2');
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=Edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta name="description" content="Information on Set-PowerShellExitCode function">
+        <meta name="description" content="Creating a package containing files over 2GB in size">
         <meta name="twitter:site" content="@chocolateynuget">
-        <meta name="twitter:title" content="Chocolatey Software Docs | Set-PowerShellExitCode">
+        <meta name="twitter:title" content="Chocolatey Software Docs | How To Create Chocolatey Packages With Large Files">
             <meta name="twitter:card" content="summary">
             <meta name="twitter:image" content="https://docs.chocolatey.org/assets/images/global-shared/twitter-share.png">
-        <meta property="og:title" content="Chocolatey Software Docs | Set-PowerShellExitCode">
-        <meta property="og:description" content="Information on Set-PowerShellExitCode function">
+        <meta property="og:title" content="Chocolatey Software Docs | How To Create Chocolatey Packages With Large Files">
+        <meta property="og:description" content="Creating a package containing files over 2GB in size">
         <meta property="og:site_name" content="Chocolatey Software">
         <meta property="og:type" content="product">
         <meta property="og:image" content="https://docs.chocolatey.org/assets/images/global-shared/facebook-share.png">
-        <meta property="og:url" content="https://docs.chocolatey.org/en-us/create/functions/set-powershellexitcode">
+        <meta property="og:url" content="https://docs.chocolatey.org/en-us/guides/create/create-large-files-package">
         <meta property="product:brand" content="Chocolatey Software">
         <meta property="product:category" content="software">
         <meta name="flattr:id" content="mqgjkp">
-        <meta property="DC.title" content="Chocolatey Software Docs | Set-PowerShellExitCode">
+        <meta property="DC.title" content="Chocolatey Software Docs | How To Create Chocolatey Packages With Large Files">
         <meta property="copyright" content="Chocolatey is Copyright 2020 - 2023 Chocolatey Software,Inc.">
         <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
         <link rel="apple-touch-icon" href="/apple-touch-icon.png">
@@ -41,7 +41,7 @@ gtag('config', 'G-0WDD29GGN2');
         <link rel="stylesheet" href="/assets/css/chocolatey.bundle.min.css">
         <script type="text/javascript" src="/assets/js/chocolatey-head.bundle.min.js"></script>
         <script type="text/javascript" async="" referrerpolicy="unsafe-url" src="https://ws.zoominfo.com/pixel/KPKpTJOFOv5SuV7X3eGx"></script>
-        <title>Chocolatey Software Docs | Set-PowerShellExitCode</title>
+        <title>Chocolatey Software Docs | How To Create Chocolatey Packages With Large Files</title>
     </head>
     <body class="chocolatey-docs">
         <header>
@@ -1497,12 +1497,12 @@ gtag('config', 'G-0WDD29GGN2');
                                                             </ul>
                                                         </div>
                                                     </li>
-                                                    <li class="nav-item nav-item-blue active">
-                                                        <div class="nav-link nav-link-collapse d-flex active">
-                                                            <button class="btn btn-collapse rounded-0 border-0 ps-3" type="button" data-bs-toggle="collapse" aria-expanded="true" aria-controls="id-354ef65b-5c47-4db2-8480-1fca56111e0e" aria-label="collapse or expand navigation" href="#id-354ef65b-5c47-4db2-8480-1fca56111e0e"></button>
+                                                    <li class="nav-item nav-item-blue">
+                                                        <div class="nav-link nav-link-collapse d-flex">
+                                                            <button class="btn btn-collapse rounded-0 border-0 ps-3 collapsed" type="button" data-bs-toggle="collapse" aria-expanded="false" aria-controls="id-354ef65b-5c47-4db2-8480-1fca56111e0e" aria-label="collapse or expand navigation" href="#id-354ef65b-5c47-4db2-8480-1fca56111e0e"></button>
                                                             <a href="/en-us/create">Package Creation</a>
                                                         </div>
-                                                        <div class="collapse show" id="id-354ef65b-5c47-4db2-8480-1fca56111e0e">
+                                                        <div class="collapse" id="id-354ef65b-5c47-4db2-8480-1fca56111e0e">
                                                             <ul class="navbar-nav">
                                                                         <li class="nav-item">
                                                                             <a class="nav-link ps-5" href="/en-us/create/create-packages">Create Packages</a>
@@ -1542,11 +1542,11 @@ gtag('config', 'G-0WDD29GGN2');
                                                                             <a class="nav-link ps-5" href="/en-us/create/package-dependencies">Package Dependencies in Chocolatey</a>
                                                                         </li>
                                                                         <li class="nav-item">
-                                                                            <div class="nav-link nav-link-collapse d-flex active">
-                                                                                <button class="btn btn-collapse rounded-0 border-0 ps-c2" type="button" data-bs-toggle="collapse" aria-expanded="true" aria-controls="id-e05444da-4a62-4daa-8263-129cccf4cb09" aria-label="collapse or expand navigation" href="#id-e05444da-4a62-4daa-8263-129cccf4cb09"></button>
+                                                                            <div class="nav-link nav-link-collapse d-flex">
+                                                                                <button class="btn btn-collapse rounded-0 border-0 ps-c2 collapsed" type="button" data-bs-toggle="collapse" aria-expanded="false" aria-controls="id-e05444da-4a62-4daa-8263-129cccf4cb09" aria-label="collapse or expand navigation" href="#id-e05444da-4a62-4daa-8263-129cccf4cb09"></button>
                                                                                 <a href="/en-us/create/functions">PowerShell Reference</a>
                                                                             </div>
-                                                                            <div class="collapse show" id="id-e05444da-4a62-4daa-8263-129cccf4cb09">
+                                                                            <div class="collapse" id="id-e05444da-4a62-4daa-8263-129cccf4cb09">
                                                                                 <ul class="navbar-nav">
                                                                                             <li class="nav-item">
                                                                                                 <a class="nav-link ps-c4" href="/en-us/create/functions/format-filesize">Format-FileSize</a>
@@ -1648,7 +1648,7 @@ gtag('config', 'G-0WDD29GGN2');
                                                                                                 <a class="nav-link ps-c4" href="/en-us/create/functions/set-environmentvariable">Set-EnvironmentVariable</a>
                                                                                             </li>
                                                                                             <li class="nav-item">
-                                                                                                <a class="nav-link ps-c4 active active-page" href="/en-us/create/functions/set-powershellexitcode">Set-PowerShellExitCode</a>
+                                                                                                <a class="nav-link ps-c4" href="/en-us/create/functions/set-powershellexitcode">Set-PowerShellExitCode</a>
                                                                                             </li>
                                                                                             <li class="nav-item">
                                                                                                 <a class="nav-link ps-c4" href="/en-us/create/functions/start-chocolateywindowsservice">Start-ChocolateyWindowsService</a>
@@ -1695,12 +1695,12 @@ gtag('config', 'G-0WDD29GGN2');
                                                             </ul>
                                                         </div>
                                                     </li>
-                                                    <li class="nav-item nav-item-blue">
-                                                        <div class="nav-link nav-link-collapse d-flex">
-                                                            <button class="btn btn-collapse rounded-0 border-0 ps-3 collapsed" type="button" data-bs-toggle="collapse" aria-expanded="false" aria-controls="id-44331285-5e0d-45ee-910a-019f8e043706" aria-label="collapse or expand navigation" href="#id-44331285-5e0d-45ee-910a-019f8e043706"></button>
+                                                    <li class="nav-item nav-item-blue active">
+                                                        <div class="nav-link nav-link-collapse d-flex active">
+                                                            <button class="btn btn-collapse rounded-0 border-0 ps-3" type="button" data-bs-toggle="collapse" aria-expanded="true" aria-controls="id-44331285-5e0d-45ee-910a-019f8e043706" aria-label="collapse or expand navigation" href="#id-44331285-5e0d-45ee-910a-019f8e043706"></button>
                                                             <a href="/en-us/guides">Guides</a>
                                                         </div>
-                                                        <div class="collapse" id="id-44331285-5e0d-45ee-910a-019f8e043706">
+                                                        <div class="collapse show" id="id-44331285-5e0d-45ee-910a-019f8e043706">
                                                             <ul class="navbar-nav">
                                                                         <li class="nav-item">
                                                                             <a class="nav-link ps-5" href="/en-us/guides/upgrading-to-chocolatey-v2-v6">Upgrading To Chocolatey Products v2.0.0 and Chocolatey Licensed Extension 6.0.0</a>
@@ -1728,11 +1728,11 @@ gtag('config', 'G-0WDD29GGN2');
                                                                             </div>
                                                                         </li>
                                                                         <li class="nav-item">
-                                                                            <div class="nav-link nav-link-collapse d-flex">
-                                                                                <button class="btn btn-collapse rounded-0 border-0 ps-c2 collapsed" type="button" data-bs-toggle="collapse" aria-expanded="false" aria-controls="id-733ff085-3ff8-4dc6-ac4f-ee1c5df0946c" aria-label="collapse or expand navigation" href="#id-733ff085-3ff8-4dc6-ac4f-ee1c5df0946c"></button>
+                                                                            <div class="nav-link nav-link-collapse d-flex active">
+                                                                                <button class="btn btn-collapse rounded-0 border-0 ps-c2" type="button" data-bs-toggle="collapse" aria-expanded="true" aria-controls="id-733ff085-3ff8-4dc6-ac4f-ee1c5df0946c" aria-label="collapse or expand navigation" href="#id-733ff085-3ff8-4dc6-ac4f-ee1c5df0946c"></button>
                                                                                 <a href="/en-us/guides/create">Package Creation</a>
                                                                             </div>
-                                                                            <div class="collapse" id="id-733ff085-3ff8-4dc6-ac4f-ee1c5df0946c">
+                                                                            <div class="collapse show" id="id-733ff085-3ff8-4dc6-ac4f-ee1c5df0946c">
                                                                                 <ul class="navbar-nav">
                                                                                             <li class="nav-item">
                                                                                                 <a class="nav-link ps-c4" href="/en-us/guides/create/prepare-packaging-env">How To Prepare a Package Creation Environment</a>
@@ -1762,7 +1762,7 @@ gtag('config', 'G-0WDD29GGN2');
                                                                                                 <a class="nav-link ps-c4" href="/en-us/guides/create/mount-an-iso-in-chocolatey-package">Mount Iso</a>
                                                                                             </li>
                                                                                             <li class="nav-item">
-                                                                                                <a class="nav-link ps-c4" href="/en-us/guides/create/create-large-files-package">How To Create Chocolatey Packages With Large Files</a>
+                                                                                                <a class="nav-link ps-c4 active active-page" href="/en-us/guides/create/create-large-files-package">How To Create Chocolatey Packages With Large Files</a>
                                                                                             </li>
                                                                                             <li class="nav-item">
                                                                                                 <a class="nav-link ps-c4" href="/en-us/guides/create/create-custom-package-templates">Create Custom Package Templates</a>
@@ -1888,14 +1888,14 @@ gtag('config', 'G-0WDD29GGN2');
                         </div>
                         <div class="col-md-9 col-xl-10 py-3 py-md-5 px-md-4 mx-auto">
                             <div class="container d-xl-none">
-                                <h1 class="title">Set-PowerShellExitCode</h1>                 
+                                <h1 class="title">How To Create Chocolatey Packages With Large Files</h1>                 
 <nav aria-label="breadcrumb">
 	<ol class="breadcrumb">
 			<li class="breadcrumb-item"><a href="/en-us">Chocolatey</a></li>
-			<li class="breadcrumb-item"><a href="/en-us/create">Package Creation</a></li>
-			<li class="breadcrumb-item"><a href="/en-us/create/functions">PowerShell Reference</a></li>
+			<li class="breadcrumb-item"><a href="/en-us/guides">Guides</a></li>
+			<li class="breadcrumb-item"><a href="/en-us/guides/create">Package Creation</a></li>
 		
-		<li class="breadcrumb-item active" aria-current="page">Set-PowerShellExitCode</li>
+		<li class="breadcrumb-item active" aria-current="page">How To Create Chocolatey Packages With Large Files</li>
 	</ol>
 </nav>
 
@@ -1904,137 +1904,131 @@ gtag('config', 'G-0WDD29GGN2');
                                 <div class="row">
                                     <div id="mainContent" class="anchorjs-container col-xl-10 order-2 order-xl-1">
                                         <div class="d-none d-xl-block">
-                                            <h1 class="title">Set-PowerShellExitCode</h1>                 
+                                            <h1 class="title">How To Create Chocolatey Packages With Large Files</h1>                 
 <nav aria-label="breadcrumb">
 	<ol class="breadcrumb">
 			<li class="breadcrumb-item"><a href="/en-us">Chocolatey</a></li>
-			<li class="breadcrumb-item"><a href="/en-us/create">Package Creation</a></li>
-			<li class="breadcrumb-item"><a href="/en-us/create/functions">PowerShell Reference</a></li>
+			<li class="breadcrumb-item"><a href="/en-us/guides">Guides</a></li>
+			<li class="breadcrumb-item"><a href="/en-us/guides/create">Package Creation</a></li>
 		
-		<li class="breadcrumb-item active" aria-current="page">Set-PowerShellExitCode</li>
+		<li class="breadcrumb-item active" aria-current="page">How To Create Chocolatey Packages With Large Files</li>
 	</ol>
 </nav>
 
                                         </div>
-                                        <h1 id="set-powershellexitcode">Set-PowerShellExitCode</h1>
-<!-- This documentation is automatically generated from https://github.com/chocolatey/choco/blob/master/src/chocolatey.resources/helpers/functions/Set-PowerShellExitCode.ps1 using https://github.com/chocolatey/choco/blob/master/GenerateDocs.ps1. Contributions are welcome at the original location(s). -->
-<p>Sets the exit code for the PowerShell scripts.</p>
-<h2 id="syntax">Syntax</h2>
-<pre><code class="language-powershell">Set-PowerShellExitCode `
-  [-ExitCode &lt;Int32&gt;] `
-  [-IgnoredArguments &lt;Object[]&gt;] [&lt;CommonParameters&gt;]
-</code></pre>
-<h2 id="description">Description</h2>
-<p>Sets the exit code as an environment variable that is checked and used
-as the exit code for the package at the end of the package script.</p>
-<h2 id="notes">Notes</h2>
-<p>This tells PowerShell that it should prepare to shut down.</p>
-<h2 id="aliases">Aliases</h2>
-<p>None</p>
-<h2 id="examples">Examples</h2>
-<p><strong>EXAMPLE 1</strong></p>
-<pre><code class="language-powershell">Set-PowerShellExitCode 3010
+                                        <p>Chocolatey is built on top of NuGet, which itself does not gracefully handle packages that contain files over 2GB in size. When dealing with a scenario where you need to handle files larger than 2GB in size, it's important that the package reaches out to an external location to retrieve the large files. While UNC file paths do work as the location for such files, it is highly recommended to store them on a web host to make it easier to manage permissions.</p>
+<p>Our example here will use a relatively small file to keep the tutorial short and easy to follow, but the methods uses seamlessly transpose to using a file of really any size.</p>
+<h3 id="creating-your-package">Creating Your Package</h3>
+<ol>
+<li>Open the <code>tutorials</code> folder in VSCode.</li>
+<li>Press <code>Ctrl+Shift+P</code> or use the <strong>View</strong> menu and click on <strong>Command Palette</strong>.</li>
+<li>Type <code>Chocolatey:</code> and select <code>Create new Chocolatey package</code> from the list of available commands.</li>
+<li>Give your package a name, e.g. <code>large-files-package</code>.</li>
+<li>Select <code>Default Template</code> when prompted.</li>
+</ol>
+<h3 id="create-your-install-script">Create Your Install Script</h3>
+<p>Open the <code>chocolateyInstall.ps1</code> script from the VSCode Explorer pane. Replace the contents of the script with the following:</p>
+<pre><code class="language-powershell">$ErrorActionPreference = 'Stop';
+$toolsDir   = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
+$url        = 'https://server:8443/repository/choco-install/npp.7.9.3.Installer.x64.zip'
+$zipChecksum = 'c3a5c0d10747f80d0e60767b92a8ee4e8f0bdc5067b8747368fcf322926f887c'
 
+$zipArgs = @{
+	PackageName = $env:ChocolateyPackageName
+	url = $url
+	unzipLocation = $toolsDir
+	checksum = $zipChecksum
+	checksumType = 'SHA256'
+}
+
+Install-ChocolateyZipPackage @zipArgs
+
+
+$fileLocation = Join-Path $toolsDir 'npp.7.9.3.Installer.x64.exe'
+
+$packageArgs = @{
+  packageName   = $env:ChocolateyPackageName
+  fileType      = 'EXE'
+  file = $fileLocation
+  softwareName  = 'notepad*'
+  checksum      = '942A5FA284DF6018AEC19110B0D9E68742194BFD44DD984B515ADF103D99775A'
+  checksumType  = 'sha256'
+  silentArgs    = "/S"
+  validExitCodes= @(0)
+  useOriginalLocation = $true
+}
+
+Install-ChocolateyInstallPackage @packageArgs
 </code></pre>
-<h2 id="inputs">Inputs</h2>
-<p>None</p>
-<h2 id="outputs">Outputs</h2>
-<p>None</p>
-<h2 id="parameters">Parameters</h2>
-<h3 id="exitcode-int32">-ExitCode [&lt;Int32&gt;]</h3>
-<p>The exit code to set.</p>
-<table>
-<thead>
-<tr>
-<th>Property</th>
-<th>Value</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>Aliases</td>
-<td></td>
-</tr>
-<tr>
-<td>Required?</td>
-<td>false</td>
-</tr>
-<tr>
-<td>Position?</td>
-<td>1</td>
-</tr>
-<tr>
-<td>Default Value</td>
-<td>0</td>
-</tr>
-<tr>
-<td>Accept Pipeline Input?</td>
-<td>false</td>
-</tr>
-</tbody>
-</table>
-<h3 id="ignoredarguments-object">-IgnoredArguments [&lt;Object[]&gt;]</h3>
-<p>Allows splatting with arguments that do not apply. Do not use directly.</p>
-<table>
-<thead>
-<tr>
-<th>Property</th>
-<th>Value</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>Aliases</td>
-<td></td>
-</tr>
-<tr>
-<td>Required?</td>
-<td>false</td>
-</tr>
-<tr>
-<td>Position?</td>
-<td>named</td>
-</tr>
-<tr>
-<td>Default Value</td>
-<td></td>
-</tr>
-<tr>
-<td>Accept Pipeline Input?</td>
-<td>false</td>
-</tr>
-</tbody>
-</table>
-<h3 id="commonparameters">&lt;CommonParameters&gt;</h3>
-<p>This cmdlet supports the common parameters: -Verbose, -Debug, -ErrorAction, -ErrorVariable, -OutBuffer, and -OutVariable. For more information, see <code>about_CommonParameters</code> <a href="http://go.microsoft.com/fwlink/p/?LinkID=113216">http://go.microsoft.com/fwlink/p/?LinkID=113216</a> .</p>
-<p><a href="/en-us/create/functions">Function Reference</a></p>
-<blockquote>
-<p>:choco-info: <strong>NOTE</strong></p>
-<p>This documentation has been automatically generated from <code>Import-Module "$env:ChocolateyInstall\helpers\chocolateyInstaller.psm1" -Force; Get-Help Set-PowerShellExitCode -Full</code>.</p>
-</blockquote>
-<p>View the source for <a href="https://github.com/chocolatey/choco/blob/master/src/chocolatey.resources/helpers/functions/Set-PowerShellExitCode.ps1">Set-PowerShellExitCode</a></p>
+<p>Save and close the file.</p>
+<h3 id="cleaning-up-the-packaging">Cleaning Up the Packaging</h3>
+<p>Our simple example here doesn't require anything special for an upgrade or uninstall scenario. In the VSCode Explorer pane find both the <code>chocolateyBeforeModify.ps1</code> and <code>chocolateyUninstall.ps1</code> files and remove them.</p>
+<h3 id="creating-the-package-metadata">Creating the Package Metadata</h3>
+<p>The package metadata is stored in a file with a <code>.nuspec</code>extension. It provides information to Chocolatey such as:</p>
+<ul>
+<li>Package ID</li>
+<li>Package Version</li>
+<li>Author</li>
+<li>Synopsis</li>
+<li>Dependencies</li>
+</ul>
+<p>For packages being published to the <a href="https://community.chocolatey.org/packages">Chocolatey Community Repository</a> additional information is required.
+You can find information on package metadata requirements in our <a href="/en-us/community-repository/moderation/package-validator/rules#requirements">Package Validator Rules</a> documentation.</p>
+<p>In the VS Code Explorer pane, find and open the <code>large-files-package.nuspec</code> file.</p>
+<p>Replace the contents of the file with the following:</p>
+<pre><code class="language-xml">&lt;!-- Do not remove this test for UTF-8: if “Ω” doesn’t appear as greek uppercase omega letter enclosed in quotation marks, you should use an editor that supports UTF-8, not this one. --&gt;
+&lt;package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd"&gt;
+  &lt;metadata&gt;
+    &lt;id&gt;large-files-package&lt;/id&gt;
+    &lt;version&gt;1.0.0&lt;/version&gt;
+    &lt;title&gt;large-files-package (Install)&lt;/title&gt;
+    &lt;authors&gt;Chocolatey Software&lt;/authors&gt;
+    &lt;tags&gt;large-files-package script tutorial&lt;/tags&gt;
+    &lt;summary&gt;Tutorial for script package&lt;/summary&gt;
+    &lt;description&gt;Tutorial for script package&lt;/description&gt;
+  &lt;/metadata&gt;
+  &lt;files&gt;
+    &lt;!-- this section controls what actually gets packaged into the Chocolatey package --&gt;
+    &lt;file src="tools\**" target="tools" /&gt;
+  &lt;/files&gt;
+&lt;/package&gt;
+</code></pre>
+<h3 id="compile-your-package">Compile Your Package</h3>
+<p>You can now run <code>choco pack</code> to compile your Chocolatey package, creating a file with a <code>.nupkg</code> extension, ready for installation!</p>
+<ol>
+<li>In VSCode press <code>Ctrl+Shift+P</code> or use the <strong>View</strong> menu and click on <strong>Command Palette</strong>.</li>
+<li>Type <code>Chocolatey:</code> and click <code>Chocolatey: Pack Chocolatey package(s)</code>.</li>
+<li>Select <code>large-files-package.nuspec</code> from the list.</li>
+<li>In <strong>Additional arguments</strong> enter <code>--output-directory='C:\tutorials'</code> and press <code>Enter</code>.</li>
+</ol>
+<h3 id="install-your-package">Install Your Package</h3>
+<p>You can test your package, and see how it behaves. In an <em>elevated PowerShell command prompt</em>, run:</p>
+<pre><code class="language-powershell">choco install large-files-package -y --source='tutorials'
+</code></pre>
+<h3 id="uninstall-your-package">Uninstall Your Package</h3>
+<p>You can test the uninstall behavior. In an <em>elevated PowerShell command prompt</em>, run:</p>
+<pre><code class="language-powershell">choco uninstall large-files-package -y
+</code></pre>
+<h3 id="conclusion">Conclusion</h3>
+<p>At this point, you should have a working package that allows you to use files over 2GB in size! Congratulations! Hopefully you can apply this to other large files for packages!</p>
 
                                     </div>
                                             <div id="rightSidebarNav" class="col-xl-2 ps-xl-3 order-1 order-xl-2">
                                                 <button class="btn btn-link btn-collapse fw-bold w-100 d-xl-none mb-2" type="button" data-bs-toggle="collapse" data-bs-target="#rightSidebar" aria-expanded="false" aria-controls="rightSidebar">Jump to Section</button>
                                                 <div id="rightSidebar" class="sticky-xl-top collapse collapse-lg">
                                                     <div class="card card-body py-0 px-xl-0 mb-3 border-0">
-                                                            <p class="fw-bold pt-3"><a href="https://github.com/chocolatey/docs/edit/master/input/en-us/create/functions/set-powershellexitcode.md"><i class="fa-solid fa-pencil" aria-hidden="true"></i> Edit This Page</a></p>
+                                                            <p class="fw-bold pt-3"><a href="https://github.com/chocolatey/docs/edit/master/input/en-us/guides/create/create-large-files-package.md"><i class="fa-solid fa-pencil" aria-hidden="true"></i> Edit This Page</a></p>
                                                             <hr class="m-0">
                                                         <p class="fw-bold pt-3 mb-2">On This Page</p>
                                                         <ul class="nav nav-scrollspy flex-column pb-3">
-                                                                <li class="nav-item"><a class="nav-link d-none" href="#set-powershellexitcode">Set-PowerShellExitCode</a></li>
-                                                                <li class="nav-item"><a class="nav-link " href="#syntax">Syntax</a></li>
-                                                                <li class="nav-item"><a class="nav-link " href="#description">Description</a></li>
-                                                                <li class="nav-item"><a class="nav-link " href="#notes">Notes</a></li>
-                                                                <li class="nav-item"><a class="nav-link " href="#aliases">Aliases</a></li>
-                                                                <li class="nav-item"><a class="nav-link " href="#examples">Examples</a></li>
-                                                                <li class="nav-item"><a class="nav-link " href="#inputs">Inputs</a></li>
-                                                                <li class="nav-item"><a class="nav-link " href="#outputs">Outputs</a></li>
-                                                                <li class="nav-item"><a class="nav-link " href="#parameters">Parameters</a></li>
-                                                                <li class="nav-item"><a class="nav-link ps-4" href="#exitcode-int32">-ExitCode [&lt;Int32&gt;]</a></li>
-                                                                <li class="nav-item"><a class="nav-link ps-4" href="#ignoredarguments-object">-IgnoredArguments [&lt;Object[]&gt;]</a></li>
-                                                                <li class="nav-item"><a class="nav-link ps-4" href="#commonparameters">&lt;CommonParameters&gt;</a></li>
+                                                                <li class="nav-item"><a class="nav-link ps-4" href="#creating-your-package">Creating Your Package</a></li>
+                                                                <li class="nav-item"><a class="nav-link ps-4" href="#create-your-install-script">Create Your Install Script</a></li>
+                                                                <li class="nav-item"><a class="nav-link ps-4" href="#cleaning-up-the-packaging">Cleaning Up the Packaging</a></li>
+                                                                <li class="nav-item"><a class="nav-link ps-4" href="#creating-the-package-metadata">Creating the Package Metadata</a></li>
+                                                                <li class="nav-item"><a class="nav-link ps-4" href="#compile-your-package">Compile Your Package</a></li>
+                                                                <li class="nav-item"><a class="nav-link ps-4" href="#install-your-package">Install Your Package</a></li>
+                                                                <li class="nav-item"><a class="nav-link ps-4" href="#uninstall-your-package">Uninstall Your Package</a></li>
+                                                                <li class="nav-item"><a class="nav-link ps-4" href="#conclusion">Conclusion</a></li>
                                                         </ul>
                                                     </div>
                                                 </div>
