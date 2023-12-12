@@ -12,21 +12,21 @@ gtag('config', 'G-0WDD29GGN2');
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=Edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta name="description" content="Information on how to remediate the Chocolatey Package Moderation Rule 0003" />
+        <meta name="description" content="A walkthrough creating a package that configures your computer" />
         <meta name="twitter:site" content="@chocolateynuget">
-        <meta name="twitter:title" content="Chocolatey Software Docs | CPMR0003 - Install Script Named Incorrectly (package)">
+        <meta name="twitter:title" content="Chocolatey Software Docs | How To Create a Configuration Package">
             <meta name="twitter:card" content="summary">
             <meta name="twitter:image" content="https://docs.chocolatey.org/assets/images/global-shared/twitter-share.png">
-        <meta property="og:title" content="Chocolatey Software Docs | CPMR0003 - Install Script Named Incorrectly (package)" />
-        <meta property="og:description" content="Information on how to remediate the Chocolatey Package Moderation Rule 0003" />
+        <meta property="og:title" content="Chocolatey Software Docs | How To Create a Configuration Package" />
+        <meta property="og:description" content="A walkthrough creating a package that configures your computer" />
         <meta property="og:site_name" content="Chocolatey Software" />
         <meta property="og:type" content="product" />
         <meta property="og:image" content="https://docs.chocolatey.org/assets/images/global-shared/facebook-share.png" />
-        <meta property="og:url" content="https://docs.chocolatey.org/en-us/community-repository/moderation/package-validator/rules/cpmr0003" />
+        <meta property="og:url" content="https://docs.chocolatey.org/en-us/guides/create/create-config-package" />
         <meta property="product:brand" content="Chocolatey Software" />
         <meta property="product:category" content="software" />
         <meta name="flattr:id" content="mqgjkp">
-        <meta property="DC.title" content="Chocolatey Software Docs | CPMR0003 - Install Script Named Incorrectly (package)" />
+        <meta property="DC.title" content="Chocolatey Software Docs | How To Create a Configuration Package" />
         <meta property="copyright" content="Chocolatey is Copyright 2020 - 2023 Chocolatey Software,Inc." />
         <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
         <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
@@ -43,7 +43,7 @@ gtag('config', 'G-0WDD29GGN2');
         <link rel="stylesheet" href="/assets/css/chocolatey.bundle.min.css" />
         <script type="text/javascript" src="/assets/js/chocolatey-head.bundle.min.js"></script>
         <script type="text/javascript" async referrerpolicy="unsafe-url" src="https://ws.zoominfo.com/pixel/KPKpTJOFOv5SuV7X3eGx"></script>
-        <title>Chocolatey Software Docs | CPMR0003 - Install Script Named Incorrectly (package)</title>
+        <title>Chocolatey Software Docs | How To Create a Configuration Package</title>
     </head>
     <body class="chocolatey-docs">
         <header>
@@ -253,12 +253,12 @@ gtag('config', 'G-0WDD29GGN2');
                                                     <li class="nav-item nav-item-blue">
                                                         <a class="nav-link ps-c2" href="/en-us/chocolatey-components-dependencies-and-support-lifecycle">Chocolatey Components Dependencies and Support Lifecycle</a>
                                                     </li>
-                                                    <li class="nav-item nav-item-blue active">
-                                                        <div class="nav-link nav-link-collapse d-flex active">
-                                                            <button class="btn btn-collapse rounded-0 border-0 ps-3" type="button" data-bs-toggle="collapse" aria-expanded="true" aria-controls="id-a5b3da97-0564-44a9-b84c-ddfab95c6f8a" aria-label="collapse or expand navigation" href="#id-a5b3da97-0564-44a9-b84c-ddfab95c6f8a"></button>
+                                                    <li class="nav-item nav-item-blue">
+                                                        <div class="nav-link nav-link-collapse d-flex">
+                                                            <button class="btn btn-collapse rounded-0 border-0 ps-3 collapsed" type="button" data-bs-toggle="collapse" aria-expanded="false" aria-controls="id-a5b3da97-0564-44a9-b84c-ddfab95c6f8a" aria-label="collapse or expand navigation" href="#id-a5b3da97-0564-44a9-b84c-ddfab95c6f8a"></button>
                                                             <a href="/en-us/community-repository">Chocolatey Community Repository (CCR)</a>
                                                         </div>
-                                                        <div class="collapse show" id="id-a5b3da97-0564-44a9-b84c-ddfab95c6f8a">
+                                                        <div class="collapse" id="id-a5b3da97-0564-44a9-b84c-ddfab95c6f8a">
                                                             <ul class="navbar-nav">
                                                                         <li class="nav-item">
                                                                             <a class="nav-link ps-5" href="/en-us/community-repository/community-packages-disclaimer">community.chocolatey.org Packages Disclaimer</a>
@@ -299,25 +299,25 @@ gtag('config', 'G-0WDD29GGN2');
                                                                             </div>
                                                                         </li>
                                                                         <li class="nav-item">
-                                                                            <div class="nav-link nav-link-collapse d-flex active">
-                                                                                <button class="btn btn-collapse rounded-0 border-0 ps-c2" type="button" data-bs-toggle="collapse" aria-expanded="true" aria-controls="id-c90e8949-f6a4-43e3-b075-7c106aad8ed4" aria-label="collapse or expand navigation" href="#id-c90e8949-f6a4-43e3-b075-7c106aad8ed4"></button>
+                                                                            <div class="nav-link nav-link-collapse d-flex">
+                                                                                <button class="btn btn-collapse rounded-0 border-0 ps-c2 collapsed" type="button" data-bs-toggle="collapse" aria-expanded="false" aria-controls="id-c90e8949-f6a4-43e3-b075-7c106aad8ed4" aria-label="collapse or expand navigation" href="#id-c90e8949-f6a4-43e3-b075-7c106aad8ed4"></button>
                                                                                 <a href="/en-us/community-repository/moderation">Moderation</a>
                                                                             </div>
-                                                                            <div class="collapse show" id="id-c90e8949-f6a4-43e3-b075-7c106aad8ed4">
+                                                                            <div class="collapse" id="id-c90e8949-f6a4-43e3-b075-7c106aad8ed4">
                                                                                 <ul class="navbar-nav">
                                                                                             <li class="nav-item">
-                                                                                                <div class="nav-link nav-link-collapse d-flex active">
-                                                                                                    <button class="btn btn-collapse rounded-0 border-0 ps-5" type="button" data-bs-toggle="collapse" aria-expanded="true" aria-controls="id-1765d563-4aea-4faf-a3aa-6bb11fbe1858" aria-label="collapse or expand navigation" href="#id-1765d563-4aea-4faf-a3aa-6bb11fbe1858"></button>
+                                                                                                <div class="nav-link nav-link-collapse d-flex">
+                                                                                                    <button class="btn btn-collapse rounded-0 border-0 ps-5 collapsed" type="button" data-bs-toggle="collapse" aria-expanded="false" aria-controls="id-1765d563-4aea-4faf-a3aa-6bb11fbe1858" aria-label="collapse or expand navigation" href="#id-1765d563-4aea-4faf-a3aa-6bb11fbe1858"></button>
                                                                                                     <a href="/en-us/community-repository/moderation/package-validator">Package Validator Moderation Service</a>
                                                                                                 </div>
-                                                                                                <div class="collapse show" id="id-1765d563-4aea-4faf-a3aa-6bb11fbe1858">
+                                                                                                <div class="collapse" id="id-1765d563-4aea-4faf-a3aa-6bb11fbe1858">
                                                                                                     <ul class="navbar-nav">
                                                                                                                 <li class="nav-item">
-                                                                                                                    <div class="nav-link nav-link-collapse d-flex active">
-                                                                                                                        <button class="btn btn-collapse rounded-0 border-0 ps-c4" type="button" data-bs-toggle="collapse" aria-expanded="true" aria-controls="id-b5592561-7349-4025-aab9-9c1172322f48" aria-label="collapse or expand navigation" href="#id-b5592561-7349-4025-aab9-9c1172322f48"></button>
+                                                                                                                    <div class="nav-link nav-link-collapse d-flex">
+                                                                                                                        <button class="btn btn-collapse rounded-0 border-0 ps-c4 collapsed" type="button" data-bs-toggle="collapse" aria-expanded="false" aria-controls="id-b5592561-7349-4025-aab9-9c1172322f48" aria-label="collapse or expand navigation" href="#id-b5592561-7349-4025-aab9-9c1172322f48"></button>
                                                                                                                         <a href="/en-us/community-repository/moderation/package-validator/rules">Package Validator Rules</a>
                                                                                                                     </div>
-                                                                                                                    <div class="collapse show" id="id-b5592561-7349-4025-aab9-9c1172322f48">
+                                                                                                                    <div class="collapse" id="id-b5592561-7349-4025-aab9-9c1172322f48">
                                                                                                                         <ul class="navbar-nav">
                                                                                                                                     <li class="nav-item">
                                                                                                                                         <a class="nav-link ps-c6" href="/en-us/community-repository/moderation/package-validator/rules/cpmr0001">CPMR0001 - Copyright Character Count Below 4 (nuspec)</a>
@@ -326,7 +326,7 @@ gtag('config', 'G-0WDD29GGN2');
                                                                                                                                         <a class="nav-link ps-c6" href="/en-us/community-repository/moderation/package-validator/rules/cpmr0002">CPMR0002 - Description Missing (nuspec)</a>
                                                                                                                                     </li>
                                                                                                                                     <li class="nav-item">
-                                                                                                                                        <a class="nav-link ps-c6 active active-page" href="/en-us/community-repository/moderation/package-validator/rules/cpmr0003">CPMR0003 - Install Script Named Incorrectly (package)</a>
+                                                                                                                                        <a class="nav-link ps-c6" href="/en-us/community-repository/moderation/package-validator/rules/cpmr0003">CPMR0003 - Install Script Named Incorrectly (package)</a>
                                                                                                                                     </li>
                                                                                                                                     <li class="nav-item">
                                                                                                                                         <a class="nav-link ps-c6" href="/en-us/community-repository/moderation/package-validator/rules/cpmr0004">CPMR0004 - Do Not Package Internal Files (package)</a>
@@ -1697,12 +1697,12 @@ gtag('config', 'G-0WDD29GGN2');
                                                             </ul>
                                                         </div>
                                                     </li>
-                                                    <li class="nav-item nav-item-blue">
-                                                        <div class="nav-link nav-link-collapse d-flex">
-                                                            <button class="btn btn-collapse rounded-0 border-0 ps-3 collapsed" type="button" data-bs-toggle="collapse" aria-expanded="false" aria-controls="id-59de38d1-cef3-4b8b-b897-5b94c6ed2469" aria-label="collapse or expand navigation" href="#id-59de38d1-cef3-4b8b-b897-5b94c6ed2469"></button>
+                                                    <li class="nav-item nav-item-blue active">
+                                                        <div class="nav-link nav-link-collapse d-flex active">
+                                                            <button class="btn btn-collapse rounded-0 border-0 ps-3" type="button" data-bs-toggle="collapse" aria-expanded="true" aria-controls="id-59de38d1-cef3-4b8b-b897-5b94c6ed2469" aria-label="collapse or expand navigation" href="#id-59de38d1-cef3-4b8b-b897-5b94c6ed2469"></button>
                                                             <a href="/en-us/guides">Guides</a>
                                                         </div>
-                                                        <div class="collapse" id="id-59de38d1-cef3-4b8b-b897-5b94c6ed2469">
+                                                        <div class="collapse show" id="id-59de38d1-cef3-4b8b-b897-5b94c6ed2469">
                                                             <ul class="navbar-nav">
                                                                         <li class="nav-item">
                                                                             <a class="nav-link ps-5" href="/en-us/guides/upgrading-to-chocolatey-v2-v6">Upgrading To Chocolatey Products v2.0.0 and Chocolatey Licensed Extension 6.0.0</a>
@@ -1730,11 +1730,11 @@ gtag('config', 'G-0WDD29GGN2');
                                                                             </div>
                                                                         </li>
                                                                         <li class="nav-item">
-                                                                            <div class="nav-link nav-link-collapse d-flex">
-                                                                                <button class="btn btn-collapse rounded-0 border-0 ps-c2 collapsed" type="button" data-bs-toggle="collapse" aria-expanded="false" aria-controls="id-f1657a2c-9cd1-479a-a2d5-4b51c6647624" aria-label="collapse or expand navigation" href="#id-f1657a2c-9cd1-479a-a2d5-4b51c6647624"></button>
+                                                                            <div class="nav-link nav-link-collapse d-flex active">
+                                                                                <button class="btn btn-collapse rounded-0 border-0 ps-c2" type="button" data-bs-toggle="collapse" aria-expanded="true" aria-controls="id-f1657a2c-9cd1-479a-a2d5-4b51c6647624" aria-label="collapse or expand navigation" href="#id-f1657a2c-9cd1-479a-a2d5-4b51c6647624"></button>
                                                                                 <a href="/en-us/guides/create">Package Creation</a>
                                                                             </div>
-                                                                            <div class="collapse" id="id-f1657a2c-9cd1-479a-a2d5-4b51c6647624">
+                                                                            <div class="collapse show" id="id-f1657a2c-9cd1-479a-a2d5-4b51c6647624">
                                                                                 <ul class="navbar-nav">
                                                                                             <li class="nav-item">
                                                                                                 <a class="nav-link ps-c4" href="/en-us/guides/create/prepare-packaging-env">How To Prepare a Package Creation Environment</a>
@@ -1752,7 +1752,7 @@ gtag('config', 'G-0WDD29GGN2');
                                                                                                 <a class="nav-link ps-c4" href="/en-us/guides/create/create-script-package">How To Create a Script Package</a>
                                                                                             </li>
                                                                                             <li class="nav-item">
-                                                                                                <a class="nav-link ps-c4" href="/en-us/guides/create/create-config-package">How To Create a Configuration Package</a>
+                                                                                                <a class="nav-link ps-c4 active active-page" href="/en-us/guides/create/create-config-package">How To Create a Configuration Package</a>
                                                                                             </li>
                                                                                             <li class="nav-item">
                                                                                                 <a class="nav-link ps-c4" href="/en-us/guides/create/create-meta-package">How To Create a Chocolatey Meta Package</a>
@@ -1893,16 +1893,14 @@ gtag('config', 'G-0WDD29GGN2');
                         </div>
                         <div class="col-md-9 col-xl-10 py-3 py-md-5 px-md-4 mx-auto">
                             <div class="container d-xl-none">
-                                <h1 class="title">CPMR0003 - Install Script Named Incorrectly (package)</h1>                 
+                                <h1 class="title">How To Create a Configuration Package</h1>                 
 <nav aria-label="breadcrumb">
 	<ol class="breadcrumb">
 			<li class="breadcrumb-item"><a href="/en-us">Chocolatey</a></li>
-			<li class="breadcrumb-item"><a href="/en-us/community-repository">Chocolatey Community Repository (CCR)</a></li>
-			<li class="breadcrumb-item"><a href="/en-us/community-repository/moderation">Moderation</a></li>
-			<li class="breadcrumb-item"><a href="/en-us/community-repository/moderation/package-validator">Package Validator Moderation Service</a></li>
-			<li class="breadcrumb-item"><a href="/en-us/community-repository/moderation/package-validator/rules">Package Validator Rules</a></li>
+			<li class="breadcrumb-item"><a href="/en-us/guides">Guides</a></li>
+			<li class="breadcrumb-item"><a href="/en-us/guides/create">Package Creation</a></li>
 		
-		<li class="breadcrumb-item active" aria-current="page">CPMR0003 - Install Script Named Incorrectly (package)</li>
+		<li class="breadcrumb-item active" aria-current="page">How To Create a Configuration Package</li>
 	</ol>
 </nav>
 
@@ -1911,44 +1909,182 @@ gtag('config', 'G-0WDD29GGN2');
                                 <div class="row">
                                     <div id="mainContent" class="anchorjs-container col-xl-10 order-2 order-xl-1">
                                         <div class="d-none d-xl-block">
-                                            <h1 class="title">CPMR0003 - Install Script Named Incorrectly (package)</h1>                 
+                                            <h1 class="title">How To Create a Configuration Package</h1>                 
 <nav aria-label="breadcrumb">
 	<ol class="breadcrumb">
 			<li class="breadcrumb-item"><a href="/en-us">Chocolatey</a></li>
-			<li class="breadcrumb-item"><a href="/en-us/community-repository">Chocolatey Community Repository (CCR)</a></li>
-			<li class="breadcrumb-item"><a href="/en-us/community-repository/moderation">Moderation</a></li>
-			<li class="breadcrumb-item"><a href="/en-us/community-repository/moderation/package-validator">Package Validator Moderation Service</a></li>
-			<li class="breadcrumb-item"><a href="/en-us/community-repository/moderation/package-validator/rules">Package Validator Rules</a></li>
+			<li class="breadcrumb-item"><a href="/en-us/guides">Guides</a></li>
+			<li class="breadcrumb-item"><a href="/en-us/guides/create">Package Creation</a></li>
 		
-		<li class="breadcrumb-item active" aria-current="page">CPMR0003 - Install Script Named Incorrectly (package)</li>
+		<li class="breadcrumb-item active" aria-current="page">How To Create a Configuration Package</li>
 	</ol>
 </nav>
 
                                         </div>
-                                        <blockquote>
-<p>:choco-warning: <strong>WARNING</strong></p>
-<p>This rule has been marked as a Requirement.</p>
-<p>Requirements represent the minimum quality of a package that is acceptable. When a package version has failed requirements, the package version requires fixing and/or response by the maintainer. Provided a Requirement has flagged correctly, it must be fixed before the package version can be approved. The exact same version should be uploaded during moderation review.</p>
+                                        <p>Some people are surprised when they learn that Chocolatey packages don't always install software.</p>
+<p>Sometimes, you may want to apply configuration to software you've installed. Sometimes, you just need to drop a file into the right place.</p>
+<p>In this how-to, we'll talk about how to make a package that doesn't install anything - and just applies configuration.</p>
+<h3 id="what-is-a-configuration-package">What Is a Configuration Package</h3>
+<p>A configuration package, predictably, applies configuration during the installation stage. You can also use this sort of package to drop files into the right place.</p>
+<h3 id="why-would-i-want-to-use-one">Why Would I Want To Use One?</h3>
+<p>An example of a basic configuration package would be a package that drops a license file to the right location on a computer, or a package that configures a web-server with some known values that you want to be used across a set of computers.</p>
+<p>We actually suggest something like this for Chocolatey for Business customers to ensure their Chocolatey licenses are in-date and easily maintained!</p>
+<h3 id="using-copy-item-and-friends">Using <code>Copy-Item</code> (and Friends)</h3>
+<p>A lot of package types have Chocolatey helper-functions ready to be used. However, configuration and file-distributing packages don't have specific functions shipped for the purpose.</p>
+<p>We'll be using built-in PowerShell functions and cmdlets instead, such as <code>Copy-Item</code>.</p>
+<h4 id="creating-a-configuration-package">Creating a Configuration Package</h4>
+<p>In this example, we're going to create an example package to license and configure an example application, helpfully titled <code>exampleapp</code>.</p>
+<p>We can run <code>choco new</code> to create a basic package, and then remove everything we don't need:</p>
+<ol>
+<li>Open your <code>tutorials</code> folder in VSCode.</li>
+<li>Press <strong>Ctrl+Shift+P</strong> or use the <strong>View</strong> menu and click on <strong>Command Palette</strong>.</li>
+<li>Select <code>Chocolatey: Create new Chocolatey package</code>.</li>
+<li>Give your package a name, e.g. <code>example-config</code>.</li>
+<li>Select the default template, and press <strong>Enter</strong>.</li>
+</ol>
+<p>This should result in a new directory, containing the following files:</p>
+<pre><code class="language-text">example-config
+├── tools
+│   ├── chocolateyBeforeModify.ps1
+│   ├── chocolateyInstall.ps1
+│   ├── chocolateyUninstall.ps1
+│   ├── LICENSE.txt
+│   ├── VERIFICATION.txt
+├── example-config.nuspec
+├── ReadMe.md
+</code></pre>
+<p>Delete the <code>chocolateyBeforeModify.ps1</code>, <code>VERIFICATION.txt</code>, and <code>ReadMe.md</code> files from the folder structure.</p>
+<p>You'll want to open the <code>example-config.nuspec</code> file, and fill out the following fields in the <code>metadata</code> section if required:</p>
+<ul>
+<li><strong>packageSourceUrl</strong>: This can be removed, or updated with your source URL.</li>
+<li><strong>owners</strong>: This field shows who maintains the package - your name or username is appropriate!</li>
+<li><strong>authors</strong>: The authors of the software in question - this should be updated with your name or username.</li>
+<li><strong>projectUrl</strong>: The URL of the software in question - for this example package, this should be removed.</li>
+<li><strong>tags</strong>: Tags for the repository you're publishing the package to. These can be updated however you prefer, though the Chocolatey Community Repository has some guidance on what is needed there.</li>
+<li><strong>summary</strong>: This is a summary of the package contents. For this example, you could add that this package will license and configure your example software.</li>
+<li><strong>description</strong>: This is a description of the package contents, and generally contains more detail than the summary - including things like package parameters. It supports markdown. We won't be dealing with anything that complex here!</li>
+</ul>
+<p>You can now fill or remove any other commented out sections of the <code>example-config.nuspec</code> file, if you want. Your file should end up looking something like this:</p>
+<pre><code class="language-xml">&lt;?xml version=&quot;1.0&quot; encoding=&quot;utf-8&quot;?&gt;
+&lt;!-- Do not remove this test for UTF-8: if “Ω” doesn’t appear as greek uppercase omega letter enclosed in quotation marks, you should use an editor that supports UTF-8, not this one. --&gt;
+&lt;package xmlns=&quot;http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd&quot;&gt;
+  &lt;metadata&gt;
+    &lt;id&gt;example-config&lt;/id&gt;
+    &lt;version&gt;0.1.0&lt;/version&gt;
+    &lt;title&gt;Example Configuration&lt;/title&gt;
+    &lt;authors&gt;PackageMaintainer&lt;/authors&gt;
+    &lt;tags&gt;example config-only&lt;/tags&gt;
+    &lt;summary&gt;A package that configures 'example'&lt;/summary&gt;
+    &lt;description&gt;Further detail about the configuration that is applied, and any package parameters.&lt;/description&gt;
+  &lt;/metadata&gt;
+  &lt;files&gt;
+    &lt;file src=&quot;tools\**&quot; target=&quot;tools&quot; /&gt;
+  &lt;/files&gt;
+&lt;/package&gt;
+</code></pre>
+<h4 id="creating-your-install-script">Creating Your Install Script</h4>
+<p>Install may be a bit of a misnomer, here, but as the script that runs when the package is &quot;installed&quot; is called <code>chocolateyInstall.ps1</code>, it seems appropriate.</p>
+<p>The new package you have created will already have an install script in the <code>tools</code> directory.</p>
+<p>You can remove the contents of the script, as it's the familiar template - and we won't be installing anything.</p>
+<p>Instead, replace it with some sample content for our planned configuration:</p>
+<pre><code class="language-PowerShell">$ErrorActionPreference = 'Stop'
+$ToolsDir = Split-Path $MyInvocation.MyCommand.Definition -Parent
+
+$ConfigDirectory = &quot;C:\ProgramData\exampleapp\&quot;
+
+# Ensure the license directory exists
+if (-not (Test-Path $ConfigDirectory)) {
+    $null = New-Item $ConfigDirectory -ItemType Directory
+}
+
+# Copy the license to the correct path
+Copy-Item -Path (Join-Path $ToolsDir &quot;LICENSE.txt&quot;) -Destination $ConfigDirectory
+
+# Backup the existing Configuration file, if it exists
+$ConfigFile = Join-Path $ConfigDirectory &quot;config.json&quot;
+if (Test-Path $ConfigFile) {
+    Copy-Item $ConfigFile -Destination &quot;$ConfigFile.backup&quot;
+}
+
+# Write Configuration File
+&#64;{
+    LicensePath  = Join-Path $ConfigDirectory &quot;LICENSE.txt&quot;
+    ComputerName = $env:ComputerName
+} | ConvertTo-Json | Set-Content $ConfigFile
+</code></pre>
+<h4 id="considering-uninstallation">Considering Uninstallation</h4>
+<p>There's no automatic procedure for uninstalling configuration. In this case, you can add an uninstall script that rolls back your changes.</p>
+<p>If you wanted to do this, you would overwrite the contents of the <code>chocolateyUninstall.ps1</code> script with something like this:</p>
+<pre><code class="language-PowerShell">$ConfigDirectory = &quot;C:\ProgramData\exampleapp\&quot;
+$LicensePath = Join-Path $ConfigDirectory &quot;LICENSE.txt&quot;
+$ConfigPath = Join-Path $ConfigDirectory &quot;config.json&quot;
+
+# Remove the license flie if it exists
+if (Test-Path $LicensePath) {
+    Remove-Item $LicensePath
+}
+
+# Remove the config file if it exists
+if (Test-Path $ConfigPath) {
+    Remove-Item $ConfigPath
+}
+
+# And restore the backup, if it exists
+if (Test-Path &quot;$ConfigPath.backup&quot;) {
+    Move-Item &quot;$ConfigPath.backup&quot; -Destination $ConfigPath
+}
+
+# Clean up the config directory, if it's empty
+if (-not (Get-ChildItem $ConfigDirectory)) {
+    Remove-Item $ConfigDirectory
+}
+</code></pre>
+<blockquote>
+<p>:choco-warning: Please note that this uninstall script is quite naive, as you would need to consider updated backups and what state you would want to restore to.</p>
 </blockquote>
-<h2 id="issue">Issue</h2>
-<p>Your script is named incorrectly and will need to be renamed. A script named <code>chocolateyInstall.ps1</code> was not found in your package, but another script ending in <code>install.ps1</code> was found.</p>
-<h2 id="recommended-solution">Recommended Solution</h2>
-<p>The install script should be named <code>chocolateyInstall.ps1</code> and be found in the tools folder.</p>
-<h2 id="reasoning">Reasoning</h2>
-<p>Chocolatey looks for a known/named script. Without it, Chocolatey can't run PowerShell automation.</p>
+<h3 id="compiling-your-package">Compiling Your Package</h3>
+<p>You can now run <code>choco pack</code> to compile your Chocolatey package, creating a file with a <code>.nupkg</code> extension, ready for installation!</p>
+<ol>
+<li>In VSCode, press <strong>Ctrl+Shift+P</strong> or use the <strong>View</strong> menu and click on <strong>Command Palette</strong>.</li>
+<li>Select <code>Chocolatey: Package Chocolatey package(s)</code> from the prompt.</li>
+<li>Select <code>example-config.nuspec</code> from the prompt.</li>
+<li>Press <strong>Enter</strong>, providing no additional input.</li>
+</ol>
+<p>You should have a new package generated in your current working directory.</p>
+<h3 id="installing-your-package">Installing Your Package</h3>
+<p>You can now test installation of your package.</p>
+<p>In many cases, we would recommend testing on a dedicated test system that will not be affected by a package being installed - but as this package is entirely made up, there is nearly no consequence of installing and uninstalling it (assuming you don't have an application called <code>exampleapp</code> that stores data in the way we've used, here).</p>
+<p>In an <em>elevated PowerShell command prompt</em>, run the following:</p>
+<pre><code class="language-PowerShell">choco install example-config --source='tutorials' -y
+</code></pre>
+<p>The command should run, and opening the <code>C:\ProgramData\exampleapp</code> directory should show your license and config file.</p>
+<h3 id="uninstalling-your-package">Uninstalling Your Package</h3>
+<p>If you did update the uninstall script, you should be able to run <code>choco uninstall</code>:</p>
+<pre><code class="language-PowerShell">choco uninstall example-config -y
+</code></pre>
+<p>The package should be uninstalled successfully, and checking <code>ProgramData</code> should show that the <code>exampleapp</code> directory (and the contained files) should have been removed.</p>
+<h3 id="conclusion">Conclusion</h3>
+<p>At this point, you should have a package that licenses and configures an (imaginary) application! Congratulations! Hopefully the lessons here can be applied to your more specific applications.</p>
 
                                     </div>
                                             <div id="rightSidebarNav" class="col-xl-2 ps-xl-3 order-1 order-xl-2">
                                                 <button class="btn btn-link btn-collapse fw-bold w-100 d-xl-none mb-2" type="button" data-bs-toggle="collapse" data-bs-target="#rightSidebar" aria-expanded="false" aria-controls="rightSidebar">Jump to Section</button>
                                                 <div id="rightSidebar" class="sticky-xl-top collapse collapse-lg">
                                                     <div class="card card-body py-0 px-xl-0 mb-3 border-0">
-                                                            <p class="fw-bold pt-3"><a href="https://github.com/chocolatey/docs/edit/master/input/en-us/community-repository/moderation/package-validator/rules/cpmr0003.md"><i class="fa-solid fa-pencil" aria-hidden="true"></i> Edit This Page</a></p>
+                                                            <p class="fw-bold pt-3"><a href="https://github.com/chocolatey/docs/edit/master/input/en-us/guides/create/create-config-package.md"><i class="fa-solid fa-pencil" aria-hidden="true"></i> Edit This Page</a></p>
                                                             <hr class="m-0" />
                                                         <p class="fw-bold pt-3 mb-2">On This Page</p>
                                                         <ul class="nav nav-scrollspy flex-column pb-3">
-                                                                <li class="nav-item"><a class="nav-link " href="#issue">Issue</a></li>
-                                                                <li class="nav-item"><a class="nav-link " href="#recommended-solution">Recommended Solution</a></li>
-                                                                <li class="nav-item"><a class="nav-link " href="#reasoning">Reasoning</a></li>
+                                                                <li class="nav-item"><a class="nav-link ps-4" href="#what-is-a-configuration-package">What Is a Configuration Package</a></li>
+                                                                <li class="nav-item"><a class="nav-link ps-4" href="#why-would-i-want-to-use-one">Why Would I Want To Use One?</a></li>
+                                                                <li class="nav-item"><a class="nav-link ps-4" href="#using-copy-item-and-friends">Using Copy-Item (and Friends)</a></li>
+                                                                <li class="nav-item"><a class="nav-link ps-5" href="#creating-a-configuration-package">Creating a Configuration Package</a></li>
+                                                                <li class="nav-item"><a class="nav-link ps-5" href="#creating-your-install-script">Creating Your Install Script</a></li>
+                                                                <li class="nav-item"><a class="nav-link ps-5" href="#considering-uninstallation">Considering Uninstallation</a></li>
+                                                                <li class="nav-item"><a class="nav-link ps-4" href="#compiling-your-package">Compiling Your Package</a></li>
+                                                                <li class="nav-item"><a class="nav-link ps-4" href="#installing-your-package">Installing Your Package</a></li>
+                                                                <li class="nav-item"><a class="nav-link ps-4" href="#uninstalling-your-package">Uninstalling Your Package</a></li>
+                                                                <li class="nav-item"><a class="nav-link ps-4" href="#conclusion">Conclusion</a></li>
                                                         </ul>
                                                     </div>
                                                 </div>
