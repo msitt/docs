@@ -10,21 +10,21 @@ gtag('config', 'G-0WDD29GGN2');
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=Edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta name="description" content="Information on the Package Validator Moderation Service">
+        <meta name="description" content="A walkthrough creating a Chocolatey extension package">
         <meta name="twitter:site" content="@chocolateynuget">
-        <meta name="twitter:title" content="Chocolatey Software Docs | Package Validator Moderation Service">
+        <meta name="twitter:title" content="Chocolatey Software Docs | How To Create an Extension Package">
             <meta name="twitter:card" content="summary">
             <meta name="twitter:image" content="https://docs.chocolatey.org/assets/images/global-shared/twitter-share.png">
-        <meta property="og:title" content="Chocolatey Software Docs | Package Validator Moderation Service">
-        <meta property="og:description" content="Information on the Package Validator Moderation Service">
+        <meta property="og:title" content="Chocolatey Software Docs | How To Create an Extension Package">
+        <meta property="og:description" content="A walkthrough creating a Chocolatey extension package">
         <meta property="og:site_name" content="Chocolatey Software">
         <meta property="og:type" content="product">
         <meta property="og:image" content="https://docs.chocolatey.org/assets/images/global-shared/facebook-share.png">
-        <meta property="og:url" content="https://docs.chocolatey.org/en-us/community-repository/moderation/package-validator">
+        <meta property="og:url" content="https://docs.chocolatey.org/en-us/guides/create/create-extension-package">
         <meta property="product:brand" content="Chocolatey Software">
         <meta property="product:category" content="software">
         <meta name="flattr:id" content="mqgjkp">
-        <meta property="DC.title" content="Chocolatey Software Docs | Package Validator Moderation Service">
+        <meta property="DC.title" content="Chocolatey Software Docs | How To Create an Extension Package">
         <meta property="copyright" content="Chocolatey is Copyright 2020 - 2023 Chocolatey Software,Inc.">
         <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
         <link rel="apple-touch-icon" href="/apple-touch-icon.png">
@@ -41,7 +41,7 @@ gtag('config', 'G-0WDD29GGN2');
         <link rel="stylesheet" href="/assets/css/chocolatey.bundle.min.css">
         <script type="text/javascript" src="/assets/js/chocolatey-head.bundle.min.js"></script>
         <script type="text/javascript" async="" referrerpolicy="unsafe-url" src="https://ws.zoominfo.com/pixel/KPKpTJOFOv5SuV7X3eGx"></script>
-        <title>Chocolatey Software Docs | Package Validator Moderation Service</title>
+        <title>Chocolatey Software Docs | How To Create an Extension Package</title>
     </head>
     <body class="chocolatey-docs">
         <header>
@@ -257,12 +257,12 @@ gtag('config', 'G-0WDD29GGN2');
                                                     <li class="nav-item nav-item-blue">
                                                         <a class="nav-link ps-c2" href="/en-us/chocolatey-components-dependencies-and-support-lifecycle">Chocolatey Components Dependencies and Support Lifecycle</a>
                                                     </li>
-                                                    <li class="nav-item nav-item-blue active">
-                                                        <div class="nav-link nav-link-collapse d-flex active">
-                                                            <button class="btn btn-collapse rounded-0 border-0 ps-3" type="button" data-bs-toggle="collapse" aria-expanded="true" aria-controls="id-20417b9e-e0a1-4772-b290-6327b7ce6eb0" aria-label="collapse or expand navigation" href="#id-20417b9e-e0a1-4772-b290-6327b7ce6eb0"></button>
+                                                    <li class="nav-item nav-item-blue">
+                                                        <div class="nav-link nav-link-collapse d-flex">
+                                                            <button class="btn btn-collapse rounded-0 border-0 ps-3 collapsed" type="button" data-bs-toggle="collapse" aria-expanded="false" aria-controls="id-20417b9e-e0a1-4772-b290-6327b7ce6eb0" aria-label="collapse or expand navigation" href="#id-20417b9e-e0a1-4772-b290-6327b7ce6eb0"></button>
                                                             <a href="/en-us/community-repository">Chocolatey Community Repository (CCR)</a>
                                                         </div>
-                                                        <div class="collapse show" id="id-20417b9e-e0a1-4772-b290-6327b7ce6eb0">
+                                                        <div class="collapse" id="id-20417b9e-e0a1-4772-b290-6327b7ce6eb0">
                                                             <ul class="navbar-nav">
                                                                         <li class="nav-item">
                                                                             <a class="nav-link ps-5" href="/en-us/community-repository/community-packages-disclaimer">community.chocolatey.org Packages Disclaimer</a>
@@ -303,18 +303,18 @@ gtag('config', 'G-0WDD29GGN2');
                                                                             </div>
                                                                         </li>
                                                                         <li class="nav-item">
-                                                                            <div class="nav-link nav-link-collapse d-flex active">
-                                                                                <button class="btn btn-collapse rounded-0 border-0 ps-c2" type="button" data-bs-toggle="collapse" aria-expanded="true" aria-controls="id-bf39cc19-b9cf-4903-946e-3ec7081b0da7" aria-label="collapse or expand navigation" href="#id-bf39cc19-b9cf-4903-946e-3ec7081b0da7"></button>
+                                                                            <div class="nav-link nav-link-collapse d-flex">
+                                                                                <button class="btn btn-collapse rounded-0 border-0 ps-c2 collapsed" type="button" data-bs-toggle="collapse" aria-expanded="false" aria-controls="id-bf39cc19-b9cf-4903-946e-3ec7081b0da7" aria-label="collapse or expand navigation" href="#id-bf39cc19-b9cf-4903-946e-3ec7081b0da7"></button>
                                                                                 <a href="/en-us/community-repository/moderation">Moderation</a>
                                                                             </div>
-                                                                            <div class="collapse show" id="id-bf39cc19-b9cf-4903-946e-3ec7081b0da7">
+                                                                            <div class="collapse" id="id-bf39cc19-b9cf-4903-946e-3ec7081b0da7">
                                                                                 <ul class="navbar-nav">
                                                                                             <li class="nav-item">
-                                                                                                <div class="nav-link nav-link-collapse d-flex active active-page">
-                                                                                                    <button class="btn btn-collapse rounded-0 border-0 ps-5" type="button" data-bs-toggle="collapse" aria-expanded="true" aria-controls="id-98d86e0f-d2f9-422e-a2e2-b4e1246f2f45" aria-label="collapse or expand navigation" href="#id-98d86e0f-d2f9-422e-a2e2-b4e1246f2f45"></button>
+                                                                                                <div class="nav-link nav-link-collapse d-flex">
+                                                                                                    <button class="btn btn-collapse rounded-0 border-0 ps-5 collapsed" type="button" data-bs-toggle="collapse" aria-expanded="false" aria-controls="id-98d86e0f-d2f9-422e-a2e2-b4e1246f2f45" aria-label="collapse or expand navigation" href="#id-98d86e0f-d2f9-422e-a2e2-b4e1246f2f45"></button>
                                                                                                     <a href="/en-us/community-repository/moderation/package-validator">Package Validator Moderation Service</a>
                                                                                                 </div>
-                                                                                                <div class="collapse show" id="id-98d86e0f-d2f9-422e-a2e2-b4e1246f2f45">
+                                                                                                <div class="collapse" id="id-98d86e0f-d2f9-422e-a2e2-b4e1246f2f45">
                                                                                                     <ul class="navbar-nav">
                                                                                                                 <li class="nav-item">
                                                                                                                     <div class="nav-link nav-link-collapse d-flex">
@@ -1701,12 +1701,12 @@ gtag('config', 'G-0WDD29GGN2');
                                                             </ul>
                                                         </div>
                                                     </li>
-                                                    <li class="nav-item nav-item-blue">
-                                                        <div class="nav-link nav-link-collapse d-flex">
-                                                            <button class="btn btn-collapse rounded-0 border-0 ps-3 collapsed" type="button" data-bs-toggle="collapse" aria-expanded="false" aria-controls="id-82334259-7a0b-4d52-812b-6f216d82de37" aria-label="collapse or expand navigation" href="#id-82334259-7a0b-4d52-812b-6f216d82de37"></button>
+                                                    <li class="nav-item nav-item-blue active">
+                                                        <div class="nav-link nav-link-collapse d-flex active">
+                                                            <button class="btn btn-collapse rounded-0 border-0 ps-3" type="button" data-bs-toggle="collapse" aria-expanded="true" aria-controls="id-82334259-7a0b-4d52-812b-6f216d82de37" aria-label="collapse or expand navigation" href="#id-82334259-7a0b-4d52-812b-6f216d82de37"></button>
                                                             <a href="/en-us/guides">Guides</a>
                                                         </div>
-                                                        <div class="collapse" id="id-82334259-7a0b-4d52-812b-6f216d82de37">
+                                                        <div class="collapse show" id="id-82334259-7a0b-4d52-812b-6f216d82de37">
                                                             <ul class="navbar-nav">
                                                                         <li class="nav-item">
                                                                             <a class="nav-link ps-5" href="/en-us/guides/upgrading-to-chocolatey-v2-v6">Upgrading To Chocolatey Products v2.0.0 and Chocolatey Licensed Extension 6.0.0</a>
@@ -1734,11 +1734,11 @@ gtag('config', 'G-0WDD29GGN2');
                                                                             </div>
                                                                         </li>
                                                                         <li class="nav-item">
-                                                                            <div class="nav-link nav-link-collapse d-flex">
-                                                                                <button class="btn btn-collapse rounded-0 border-0 ps-c2 collapsed" type="button" data-bs-toggle="collapse" aria-expanded="false" aria-controls="id-4bb85522-c979-40a9-ad53-cc604013643d" aria-label="collapse or expand navigation" href="#id-4bb85522-c979-40a9-ad53-cc604013643d"></button>
+                                                                            <div class="nav-link nav-link-collapse d-flex active">
+                                                                                <button class="btn btn-collapse rounded-0 border-0 ps-c2" type="button" data-bs-toggle="collapse" aria-expanded="true" aria-controls="id-4bb85522-c979-40a9-ad53-cc604013643d" aria-label="collapse or expand navigation" href="#id-4bb85522-c979-40a9-ad53-cc604013643d"></button>
                                                                                 <a href="/en-us/guides/create">Package Creation</a>
                                                                             </div>
-                                                                            <div class="collapse" id="id-4bb85522-c979-40a9-ad53-cc604013643d">
+                                                                            <div class="collapse show" id="id-4bb85522-c979-40a9-ad53-cc604013643d">
                                                                                 <ul class="navbar-nav">
                                                                                             <li class="nav-item">
                                                                                                 <a class="nav-link ps-c4" href="/en-us/guides/create/prepare-packaging-env">How To Prepare a Package Creation Environment</a>
@@ -1777,7 +1777,7 @@ gtag('config', 'G-0WDD29GGN2');
                                                                                                 <a class="nav-link ps-c4" href="/en-us/guides/create/create-custom-package-templates">Create Custom Package Templates</a>
                                                                                             </li>
                                                                                             <li class="nav-item">
-                                                                                                <a class="nav-link ps-c4" href="/en-us/guides/create/create-extension-package">How To Create an Extension Package</a>
+                                                                                                <a class="nav-link ps-c4 active active-page" href="/en-us/guides/create/create-extension-package">How To Create an Extension Package</a>
                                                                                             </li>
                                                                                             <li class="nav-item">
                                                                                                 <a class="nav-link ps-c4" href="/en-us/guides/create/exporting-packages">How To Export Your Packages</a>
@@ -1903,14 +1903,14 @@ gtag('config', 'G-0WDD29GGN2');
                         </div>
                         <div class="col-md-9 col-xl-10 py-3 py-md-5 px-md-4 mx-auto">
                             <div class="container d-xl-none">
-                                <h1 class="title">Package Validator Moderation Service</h1>                 
+                                <h1 class="title">How To Create an Extension Package</h1>                 
 <nav aria-label="breadcrumb">
 	<ol class="breadcrumb">
 			<li class="breadcrumb-item"><a href="/en-us">Chocolatey</a></li>
-			<li class="breadcrumb-item"><a href="/en-us/community-repository">Chocolatey Community Repository (CCR)</a></li>
-			<li class="breadcrumb-item"><a href="/en-us/community-repository/moderation">Moderation</a></li>
+			<li class="breadcrumb-item"><a href="/en-us/guides">Guides</a></li>
+			<li class="breadcrumb-item"><a href="/en-us/guides/create">Package Creation</a></li>
 		
-		<li class="breadcrumb-item active" aria-current="page">Package Validator Moderation Service</li>
+		<li class="breadcrumb-item active" aria-current="page">How To Create an Extension Package</li>
 	</ol>
 </nav>
 
@@ -1919,41 +1919,219 @@ gtag('config', 'G-0WDD29GGN2');
                                 <div class="row">
                                     <div id="mainContent" class="anchorjs-container col-xl-10 order-2 order-xl-1">
                                         <div class="d-none d-xl-block">
-                                            <h1 class="title">Package Validator Moderation Service</h1>                 
+                                            <h1 class="title">How To Create an Extension Package</h1>                 
 <nav aria-label="breadcrumb">
 	<ol class="breadcrumb">
 			<li class="breadcrumb-item"><a href="/en-us">Chocolatey</a></li>
-			<li class="breadcrumb-item"><a href="/en-us/community-repository">Chocolatey Community Repository (CCR)</a></li>
-			<li class="breadcrumb-item"><a href="/en-us/community-repository/moderation">Moderation</a></li>
+			<li class="breadcrumb-item"><a href="/en-us/guides">Guides</a></li>
+			<li class="breadcrumb-item"><a href="/en-us/guides/create">Package Creation</a></li>
 		
-		<li class="breadcrumb-item active" aria-current="page">Package Validator Moderation Service</li>
+		<li class="breadcrumb-item active" aria-current="page">How To Create an Extension Package</li>
 	</ol>
 </nav>
 
                                         </div>
-                                        <p>Here you will find a collection of more information and resources for when things fail validation. A comprehensive set of how items are reviewed is found at <a href="/en-us/community-repository/moderation#requirements">the moderation docs</a>.</p>
+                                        <p>As we've mentioned in other articles, a Chocolatey package can do near anything PowerShell can - including sharing functions and logic between packages.</p>
+<p>In this how-to, we'll talk about sharing functions between packages using extension packages.</p>
+<h3 id="what-is-an-extension-package">What Is an Extension Package</h3>
+<p>In Chocolatey-parlance, an extension package is a package that extends the ability of other Chocolatey packages, by making additional PowerShell functions or cmdlets available.</p>
+<p>Most simply put, a given extension package will import one or more PowerShell modules every time <code>choco</code> runs!</p>
+<h3 id="why-would-you-use-an-extension-package">Why Would You Use an Extension Package</h3>
+<p>The main reason we talk about extension packages is to reduce having to add the same lines of code or functions to multiple packages you maintain.</p>
+<p>You may be familiar with DRY ("Don't Repeat Yourself") coding principles, which (put simply) hold that there are benefits to maintaining your code in a single location and calling that where appropriate.</p>
+<p>Extension packages allow you to easily follow this best practice within your Chocolatey packages without copying your lines of code into dozens of places (or packages).</p>
+<p>Examples of this include:</p>
+<ul>
+<li><p>The <a href="https://community.chocolatey.org/packages/chocolatey-font-helpers.extension">Chocolatey Font Helpers Extension</a>, which has some well tested functionality for installing and uninstalling fonts in Chocolatey packages.</p>
+</li>
+<li><p>The <a href="https://community.chocolatey.org/packages/chocolatey-compatibility.extension">Chocolatey Compatibility Extension</a>, which provides otherwise deprecated or removed functions from older releases of Chocolatey CLI to maintain compatibility with older packages.</p>
+</li>
+<li><p>The <a href="https://community.chocolatey.org/packages/chocolatey-windowsupdate.extension">Chocolatey Windows Update extension</a>, which provides shared functions for many of the Windows Knowledge Base update packages on the Chocolatey Community Repository.</p>
+</li>
+</ul>
+<p>You might choose to use this over installing a full PowerShell module if you didn't want to expose the PowerShell module to the normal users of the computer - for instance, if you never wanted to expose the functions outside of Chocolatey runspaces. If you just wanted to use an available PowerShell module, you might consider having a dependency on a package that installs that module, instead.</p>
+<h3 id="extension-package">Extension Package</h3>
+<p>An extension package is organised much like any other Chocolatey package - though instead of the scripts within the <code>tools</code> directory you may be familiar with, there should be an <code>extensions</code> directory.</p>
+<p>We'll now run through how to create an extension package, assuming you have an environment set up as in <a href="/en-us/guides/create/prepare-packaging-env">Preparing Your Environment for Package Creation</a>.</p>
+<h4 id="creating-an-extension-package">Creating an Extension Package</h4>
 <blockquote>
-<p>:choco-info: <strong>NOTE</strong></p>
-<p>If you find you are getting flagged for many of these items, you should consider using choco new to generate and adapt updated templates that have all of the latest recommendations.</p>
+<p><strong>Shortcut:</strong> You can use a <a href="/en-us/guides/create/create-custom-package-templates">package template</a> to create an extension package!
+Try it, by installing the <code>extension.template</code> package and running <code>choco new test.extension --template extension</code></p>
 </blockquote>
-<p>What is the validator?
-The validator is a service that checks the quality of a package based on requirements, guidelines and suggestions for creating packages for Chocolatey’s community feed. We like to think of the validator as unit testing. It is validating that everything is as it should be and meets the minimum requirements for a package on the community feed.</p>
+<p>The extension package is actually different enough to a regular package that using the default template would result in more cleanup than help!</p>
+<p>Follow the steps below to get started:</p>
+<ol>
+<li>Create a new folder for this package. For the example, we will call it <code>example.extension</code>.
+<ol>
+<li>Create a package metadata file named <code>example.extension.nuspec</code>, and add content <a href="#package-metadata-content">as shown below</a>.</li>
+</ol>
+</li>
+<li>In the <code>example.extension</code> folder, create a folder named <code>extensions</code>.
+<ol>
+<li>Within the <code>extensions</code> folder, create a <code>ExampleModule.psm1</code> file, and add content <a href="#simple-module-content">as shown below</a>.</li>
+</ol>
+</li>
+</ol>
+<h5 id="package-metadata-content">Package Metadata Content</h5>
+<pre><code class="language-xml">&lt;?xml version="1.0" encoding="utf-8"?&gt;
+&lt;package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd"&gt;
+  &lt;metadata&gt;
+    &lt;id&gt;example.extension&lt;/id&gt;
+    &lt;version&gt;0.1.0&lt;/version&gt;
+    &lt;title&gt;Example Extension&lt;/title&gt;
+    &lt;authors&gt;__REPLACE__&lt;/authors&gt;
+    &lt;description&gt;A super cool extension package!&lt;/description&gt;
+    &lt;summary&gt;Extension package for testing.&lt;/summary&gt;
+    &lt;tags&gt;extension chocolatey package&lt;/tags&gt;
+  &lt;/metadata&gt;
+&lt;/package&gt;
+</code></pre>
+<h5 id="simple-module-content">Simple Module Content</h5>
+<pre><code class="language-PowerShell">function Set-ConfigValue {
+    &lt;#
+        .Synopsis
+            Sets a value for that program you're using.
 
-<h2 class="title-child d-none mb-3">Child Pages</h2>
-<div class="row">
-		<div class="col-lg-6 col-xl-4 pb-4">
-			<div class="card card-body card-link card-index">
-				<div class="circle">
-					<i class="fa-solid fa-file" aria-hidden="true"></i>
-				</div>
-				<div class="d-flex flex-column ps-3">
-					<p class="h5 fw-bold card-title"><a class="stretched-link" href="/en-us/community-repository/moderation/package-validator/rules" title="Package Validator Rules">Package Validator Rules</a></p>
-						<p class="card-content">Information on the Package Validator rules</p>
-				</div>
-			</div>
-		</div>
-</div>
+        .Example
+            Set-ConfigValue -Name SMTP -Value 6
+    #&gt;
+    [CmdletBinding()]
+    param(
+        # The name of the config to set
+        [Parameter(Mandatory, Position = 0, ValueFromPipelineByPropertyName)]
+        [string]$Name,
+
+        # The value to set the config to
+        [Parameter(Mandatory, Position = 1, ValueFromPipelineByPropertyName)]
+        [string]$Value,
+
+        # The path to the config file to modify
+        [string]$Path = "C:\ProgramData\exampleapp\config.json"
+    )
+    begin {
+        # Ensure the Config Directory exists
+        if (-not (Test-Path (Split-Path $Path))) {
+            $null = New-Item -Path (Split-Path $Path) -ItemType Directory
+        }
+        $Configuration = if (Test-Path $Path) {
+            Get-Content $Path | ConvertFrom-Json
+        } else {
+            @{}
+        }
+    }
+    process {
+        $Configuration.$Name = $Value
+    }
+    end {
+        $Configuration | ConvertTo-Json | Set-Content -Path $Path
+    }
+}
+</code></pre>
+<p>So, if you browse through the files in VS Code or Explorer, you should see a file structure like this:</p>
+<pre><code class="language-text">example.extension
+├── example.extension.nuspec
+├── extensions
+│   ├── ExampleModule.psm1
+</code></pre>
+<p>Open the <code>example.extension.nuspec</code> file in VS Code and modify the metadata as appropriate:</p>
+<ul>
+<li><strong>authors</strong>: This should be replaced with your name or handle.</li>
+</ul>
+<p>That's all you need!</p>
+<p>You may notice that all of the example packages above end with <code>.extension</code>. This is not required for an extension package by Chocolatey itself, but it is how we easily classify extension packages on the Chocolatey Community Repository.</p>
+<h4 id="creating-your-install-script">Creating Your Install Script</h4>
+<p>As we mentioned earlier, there's no need for an install script in an extension package - Chocolatey CLI handles putting the extension in the right place!</p>
+<p>You can <em>also</em> include a <code>tools</code> directory, with the standard Chocolatey scripts (which could be used for configuration of the module), but it is not required.</p>
+<h4 id="considering-uninstallation">Considering Uninstallation</h4>
+<p>Chocolatey will also handle uninstallation of the extension module automatically, so there's no need to add a <code>chocolateyUninstall.ps1</code> script to this package.</p>
+<h3 id="compiling-your-package">Compiling Your Package</h3>
+<p>You can now use <code>choco pack</code> to compile your Chocolatey package, creating a file with a <code>.nupkg</code> extension, ready for installation!</p>
+<ol>
+<li>In VS Code, press <code>Ctrl + Shift + P</code> or use the <strong>View</strong> menu and click on <strong>Command Palette</strong>.</li>
+<li>Select <code>Chocolatey: Package Chocolatey package(s)</code> from the prompt.</li>
+<li>Select <code>example.extension.nuspec</code> from the prompt.</li>
+<li>In <strong>Additional Arguments</strong> enter <code>--output-directory='~\tutorials'</code> (or whichever directory you're using for these tutorials), and press <strong>Enter</strong>.</li>
+</ol>
+<p>You should have a new package generated in your current working directory.</p>
+<h3 id="installing-your-package">Installing Your Package</h3>
+<p>This sort of package isn't normally installed on it's own, but you can now test installation of your package!</p>
+<p>In an elevated PowerShell command prompt, run the following:</p>
+<pre><code class="language-PowerShell">choco install example.extension --source='tutorials' -y
+</code></pre>
+<p>You should then be able to browse to the extensions directory, within your Chocolatey installation, and see that your PowerShell module has been placed there.</p>
+<pre><code class="language-PowerShell"># This should show an 'example' directory, along with all of your other installed extensions
+Get-ChildItem $env:ChocolateyInstall\extensions
+
+# This should show your module
+Get-ChildItem $env:ChocolateyInstall\extensions\example
+</code></pre>
+<h3 id="using-shared-powershell-functions">Using Shared PowerShell Functions</h3>
+<p>Once you've created your extension package, using the functions contained within is as simple as ensuring the package is installed (for instance, by adding a dependency) and calling the functions within your Chocolatey scripts.</p>
+<p>If you've already created a <a href="/en-us/guides/create/create-config-package">config package</a>, why not try adding your newly available functions to it? We'll use it as an example, here, but you can apply the same ideas to other packages.</p>
+<ul>
+<li>Open the config package <code>.nuspec</code> file in VS Code.</li>
+<li><a href="#nuspec-dependency-addition">Add a dependency</a> on your new extension package.</li>
+<li>Replace <a href="#powershell-dependency-addition">usage of PowerShell code</a> in the original package with your new function.</li>
+</ul>
+<h4 id="nuspec-dependency-addition">Nuspec Dependency Addition</h4>
+<p>Your final <code>.nuspec</code> file should look something like this:</p>
+<pre><code class="language-xml">&lt;?xml version="1.0" encoding="utf-8"?&gt;
+&lt;!-- Do not remove this test for UTF-8: if “Ω” doesn’t appear as greek uppercase omega letter enclosed in quotation marks, you should use an editor that supports UTF-8, not this one. --&gt;
+&lt;package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd"&gt;
+  &lt;metadata&gt;
+    &lt;id&gt;example-config&lt;/id&gt;
+    &lt;version&gt;0.1.0&lt;/version&gt;
+    &lt;title&gt;Example Configuration&lt;/title&gt;
+    &lt;authors&gt;PackageMaintainer&lt;/authors&gt;
+    &lt;tags&gt;example config-only&lt;/tags&gt;
+    &lt;summary&gt;A package that configures 'example'&lt;/summary&gt;
+    &lt;description&gt;Further detail about the configuration that is applied, and any package parameters.&lt;/description&gt;
+    &lt;dependencies&gt;
+        &lt;dependency id="example.extension" /&gt;
+    &lt;/dependencies&gt;
+  &lt;/metadata&gt;
+  &lt;files&gt;
+    &lt;file src="tools\**" target="tools" /&gt;
+  &lt;/files&gt;
+&lt;/package&gt;
+</code></pre>
+<p>Note the new <code>&lt;dependencies&gt;</code> section, near the bottom! There are a lot of ways to specify specific versions, ranges of versions, and more - see <a href="/en-us/create/package-dependencies">here</a> for more detail.</p>
+<p>You should now be able to reference your function within the package, without having defined it there.</p>
+<h4 id="powershell-dependency-addition">PowerShell Dependency Addition</h4>
+<pre><code class="language-PowerShell"># Write Configuration File
+Set-ConfigValue -Name LicensePath -Value (Join-Path $ConfigDirectory "LICENSE.txt")
+Set-ConfigValue -Name ComputerName -Value $env:ComputerName
+</code></pre>
+<h3 id="conclusion">Conclusion</h3>
+<p>At this point, you have created a package that extends the functionality of Chocolatey CLI.</p>
+
                                     </div>
+                                            <div id="rightSidebarNav" class="col-xl-2 ps-xl-3 order-1 order-xl-2">
+                                                <button class="btn btn-link btn-collapse fw-bold w-100 d-xl-none mb-2" type="button" data-bs-toggle="collapse" data-bs-target="#rightSidebar" aria-expanded="false" aria-controls="rightSidebar">Jump to Section</button>
+                                                <div id="rightSidebar" class="sticky-xl-top collapse collapse-lg">
+                                                    <div class="card card-body py-0 px-xl-0 mb-3 border-0">
+                                                            <p class="fw-bold pt-3"><a href="https://github.com/chocolatey/docs/edit/master/input/en-us/guides/create/create-extension-package.md"><i class="fa-solid fa-pencil" aria-hidden="true"></i> Edit This Page</a></p>
+                                                            <hr class="m-0">
+                                                        <p class="fw-bold pt-3 mb-2">On This Page</p>
+                                                        <ul class="nav nav-scrollspy flex-column pb-3">
+                                                                <li class="nav-item"><a class="nav-link ps-4" href="#what-is-an-extension-package">What Is an Extension Package</a></li>
+                                                                <li class="nav-item"><a class="nav-link ps-4" href="#why-would-you-use-an-extension-package">Why Would You Use an Extension Package</a></li>
+                                                                <li class="nav-item"><a class="nav-link ps-4" href="#extension-package">Extension Package</a></li>
+                                                                <li class="nav-item"><a class="nav-link ps-5" href="#creating-an-extension-package">Creating an Extension Package</a></li>
+                                                                <li class="nav-item"><a class="nav-link ps-c4-5" href="#package-metadata-content">Package Metadata Content</a></li>
+                                                                <li class="nav-item"><a class="nav-link ps-c4-5" href="#simple-module-content">Simple Module Content</a></li>
+                                                                <li class="nav-item"><a class="nav-link ps-5" href="#creating-your-install-script">Creating Your Install Script</a></li>
+                                                                <li class="nav-item"><a class="nav-link ps-5" href="#considering-uninstallation">Considering Uninstallation</a></li>
+                                                                <li class="nav-item"><a class="nav-link ps-4" href="#compiling-your-package">Compiling Your Package</a></li>
+                                                                <li class="nav-item"><a class="nav-link ps-4" href="#installing-your-package">Installing Your Package</a></li>
+                                                                <li class="nav-item"><a class="nav-link ps-4" href="#using-shared-powershell-functions">Using Shared PowerShell Functions</a></li>
+                                                                <li class="nav-item"><a class="nav-link ps-5" href="#nuspec-dependency-addition">Nuspec Dependency Addition</a></li>
+                                                                <li class="nav-item"><a class="nav-link ps-5" href="#powershell-dependency-addition">PowerShell Dependency Addition</a></li>
+                                                                <li class="nav-item"><a class="nav-link ps-4" href="#conclusion">Conclusion</a></li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </div>
                                 </div>
                             </div>
                         </div>
