@@ -10,21 +10,21 @@ gtag('config', 'G-0WDD29GGN2');
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=Edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta name="description" content="Centrally access information on all client machines in your environment">
+        <meta name="description" content="A walkthrough exporting your currently installed packages">
         <meta name="twitter:site" content="@chocolateynuget">
-        <meta name="twitter:title" content="Chocolatey Software Docs | Chocolatey Central Management (C4B) - Endpoint Management">
+        <meta name="twitter:title" content="Chocolatey Software Docs | How To Export Your Packages">
             <meta name="twitter:card" content="summary">
             <meta name="twitter:image" content="https://docs.chocolatey.org/assets/images/global-shared/twitter-share.png">
-        <meta property="og:title" content="Chocolatey Software Docs | Chocolatey Central Management (C4B) - Endpoint Management">
-        <meta property="og:description" content="Centrally access information on all client machines in your environment">
+        <meta property="og:title" content="Chocolatey Software Docs | How To Export Your Packages">
+        <meta property="og:description" content="A walkthrough exporting your currently installed packages">
         <meta property="og:site_name" content="Chocolatey Software">
         <meta property="og:type" content="product">
         <meta property="og:image" content="https://docs.chocolatey.org/assets/images/global-shared/facebook-share.png">
-        <meta property="og:url" content="https://docs.chocolatey.org/en-us/features/chocolatey-central-management">
+        <meta property="og:url" content="https://docs.chocolatey.org/en-us/guides/create/exporting-packages">
         <meta property="product:brand" content="Chocolatey Software">
         <meta property="product:category" content="software">
         <meta name="flattr:id" content="mqgjkp">
-        <meta property="DC.title" content="Chocolatey Software Docs | Chocolatey Central Management (C4B) - Endpoint Management">
+        <meta property="DC.title" content="Chocolatey Software Docs | How To Export Your Packages">
         <meta property="copyright" content="Chocolatey is Copyright 2020 - 2023 Chocolatey Software,Inc.">
         <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
         <link rel="apple-touch-icon" href="/apple-touch-icon.png">
@@ -41,7 +41,7 @@ gtag('config', 'G-0WDD29GGN2');
         <link rel="stylesheet" href="/assets/css/chocolatey.bundle.min.css">
         <script type="text/javascript" src="/assets/js/chocolatey-head.bundle.min.js"></script>
         <script type="text/javascript" async="" referrerpolicy="unsafe-url" src="https://ws.zoominfo.com/pixel/KPKpTJOFOv5SuV7X3eGx"></script>
-        <title>Chocolatey Software Docs | Chocolatey Central Management (C4B) - Endpoint Management</title>
+        <title>Chocolatey Software Docs | How To Export Your Packages</title>
     </head>
     <body class="chocolatey-docs">
         <header>
@@ -156,12 +156,12 @@ gtag('config', 'G-0WDD29GGN2');
                                                     <li class="nav-item nav-item-blue">
                                                         <a class="nav-link ps-c2" href="/en-us/why">Why Chocolatey?</a>
                                                     </li>
-                                                    <li class="nav-item nav-item-blue active">
-                                                        <div class="nav-link nav-link-collapse d-flex active">
-                                                            <button class="btn btn-collapse rounded-0 border-0 ps-3" type="button" data-bs-toggle="collapse" aria-expanded="true" aria-controls="id-50cc34b6-b36d-400d-954f-9d34be3ac189" aria-label="collapse or expand navigation" href="#id-50cc34b6-b36d-400d-954f-9d34be3ac189"></button>
+                                                    <li class="nav-item nav-item-blue">
+                                                        <div class="nav-link nav-link-collapse d-flex">
+                                                            <button class="btn btn-collapse rounded-0 border-0 ps-3 collapsed" type="button" data-bs-toggle="collapse" aria-expanded="false" aria-controls="id-50cc34b6-b36d-400d-954f-9d34be3ac189" aria-label="collapse or expand navigation" href="#id-50cc34b6-b36d-400d-954f-9d34be3ac189"></button>
                                                             <a href="/en-us/features">Features</a>
                                                         </div>
-                                                        <div class="collapse show" id="id-50cc34b6-b36d-400d-954f-9d34be3ac189">
+                                                        <div class="collapse" id="id-50cc34b6-b36d-400d-954f-9d34be3ac189">
                                                             <ul class="navbar-nav">
                                                                         <li class="nav-item">
                                                                             <a class="nav-link ps-5" href="/en-us/features/powershell">Packaging for the masses - PowerShell</a>
@@ -191,7 +191,7 @@ gtag('config', 'G-0WDD29GGN2');
                                                                             <a class="nav-link ps-5" href="/en-us/features/self-service-anywhere">Self Service Anywhere (C4B) - Support modern workforce</a>
                                                                         </li>
                                                                         <li class="nav-item">
-                                                                            <a class="nav-link ps-5 active active-page" href="/en-us/features/chocolatey-central-management">Chocolatey Central Management (C4B) - Endpoint Management</a>
+                                                                            <a class="nav-link ps-5" href="/en-us/features/chocolatey-central-management">Chocolatey Central Management (C4B) - Endpoint Management</a>
                                                                         </li>
                                                                         <li class="nav-item">
                                                                             <a class="nav-link ps-5" href="/en-us/features/package-internalizer">Package Internalizer (C4B)</a>
@@ -1701,12 +1701,12 @@ gtag('config', 'G-0WDD29GGN2');
                                                             </ul>
                                                         </div>
                                                     </li>
-                                                    <li class="nav-item nav-item-blue">
-                                                        <div class="nav-link nav-link-collapse d-flex">
-                                                            <button class="btn btn-collapse rounded-0 border-0 ps-3 collapsed" type="button" data-bs-toggle="collapse" aria-expanded="false" aria-controls="id-580c0baf-8d7d-4905-a333-fea67227fc19" aria-label="collapse or expand navigation" href="#id-580c0baf-8d7d-4905-a333-fea67227fc19"></button>
+                                                    <li class="nav-item nav-item-blue active">
+                                                        <div class="nav-link nav-link-collapse d-flex active">
+                                                            <button class="btn btn-collapse rounded-0 border-0 ps-3" type="button" data-bs-toggle="collapse" aria-expanded="true" aria-controls="id-580c0baf-8d7d-4905-a333-fea67227fc19" aria-label="collapse or expand navigation" href="#id-580c0baf-8d7d-4905-a333-fea67227fc19"></button>
                                                             <a href="/en-us/guides">Guides</a>
                                                         </div>
-                                                        <div class="collapse" id="id-580c0baf-8d7d-4905-a333-fea67227fc19">
+                                                        <div class="collapse show" id="id-580c0baf-8d7d-4905-a333-fea67227fc19">
                                                             <ul class="navbar-nav">
                                                                         <li class="nav-item">
                                                                             <a class="nav-link ps-5" href="/en-us/guides/upgrading-to-chocolatey-v2-v6">Upgrading To Chocolatey Products v2.0.0 and Chocolatey Licensed Extension 6.0.0</a>
@@ -1734,11 +1734,11 @@ gtag('config', 'G-0WDD29GGN2');
                                                                             </div>
                                                                         </li>
                                                                         <li class="nav-item">
-                                                                            <div class="nav-link nav-link-collapse d-flex">
-                                                                                <button class="btn btn-collapse rounded-0 border-0 ps-c2 collapsed" type="button" data-bs-toggle="collapse" aria-expanded="false" aria-controls="id-9958a7f0-15c1-4219-a344-fff8fd382b5d" aria-label="collapse or expand navigation" href="#id-9958a7f0-15c1-4219-a344-fff8fd382b5d"></button>
+                                                                            <div class="nav-link nav-link-collapse d-flex active">
+                                                                                <button class="btn btn-collapse rounded-0 border-0 ps-c2" type="button" data-bs-toggle="collapse" aria-expanded="true" aria-controls="id-9958a7f0-15c1-4219-a344-fff8fd382b5d" aria-label="collapse or expand navigation" href="#id-9958a7f0-15c1-4219-a344-fff8fd382b5d"></button>
                                                                                 <a href="/en-us/guides/create">Package Creation</a>
                                                                             </div>
-                                                                            <div class="collapse" id="id-9958a7f0-15c1-4219-a344-fff8fd382b5d">
+                                                                            <div class="collapse show" id="id-9958a7f0-15c1-4219-a344-fff8fd382b5d">
                                                                                 <ul class="navbar-nav">
                                                                                             <li class="nav-item">
                                                                                                 <a class="nav-link ps-c4" href="/en-us/guides/create/prepare-packaging-env">How To Prepare a Package Creation Environment</a>
@@ -1777,7 +1777,7 @@ gtag('config', 'G-0WDD29GGN2');
                                                                                                 <a class="nav-link ps-c4" href="/en-us/guides/create/create-custom-package-templates">Create Custom Package Templates</a>
                                                                                             </li>
                                                                                             <li class="nav-item">
-                                                                                                <a class="nav-link ps-c4" href="/en-us/guides/create/exporting-packages">How To Export Your Packages</a>
+                                                                                                <a class="nav-link ps-c4 active active-page" href="/en-us/guides/create/exporting-packages">How To Export Your Packages</a>
                                                                                             </li>
                                                                                 </ul>
                                                                             </div>
@@ -1900,13 +1900,14 @@ gtag('config', 'G-0WDD29GGN2');
                         </div>
                         <div class="col-md-9 col-xl-10 py-3 py-md-5 px-md-4 mx-auto">
                             <div class="container d-xl-none">
-                                <h1 class="title">Chocolatey Central Management (C4B) - Endpoint Management</h1>                 
+                                <h1 class="title">How To Export Your Packages</h1>                 
 <nav aria-label="breadcrumb">
 	<ol class="breadcrumb">
 			<li class="breadcrumb-item"><a href="/en-us">Chocolatey</a></li>
-			<li class="breadcrumb-item"><a href="/en-us/features">Features</a></li>
+			<li class="breadcrumb-item"><a href="/en-us/guides">Guides</a></li>
+			<li class="breadcrumb-item"><a href="/en-us/guides/create">Package Creation</a></li>
 		
-		<li class="breadcrumb-item active" aria-current="page">Chocolatey Central Management (C4B) - Endpoint Management</li>
+		<li class="breadcrumb-item active" aria-current="page">How To Export Your Packages</li>
 	</ol>
 </nav>
 
@@ -1915,49 +1916,88 @@ gtag('config', 'G-0WDD29GGN2');
                                 <div class="row">
                                     <div id="mainContent" class="anchorjs-container col-xl-10 order-2 order-xl-1">
                                         <div class="d-none d-xl-block">
-                                            <h1 class="title">Chocolatey Central Management (C4B) - Endpoint Management</h1>                 
+                                            <h1 class="title">How To Export Your Packages</h1>                 
 <nav aria-label="breadcrumb">
 	<ol class="breadcrumb">
 			<li class="breadcrumb-item"><a href="/en-us">Chocolatey</a></li>
-			<li class="breadcrumb-item"><a href="/en-us/features">Features</a></li>
+			<li class="breadcrumb-item"><a href="/en-us/guides">Guides</a></li>
+			<li class="breadcrumb-item"><a href="/en-us/guides/create">Package Creation</a></li>
 		
-		<li class="breadcrumb-item active" aria-current="page">Chocolatey Central Management (C4B) - Endpoint Management</li>
+		<li class="breadcrumb-item active" aria-current="page">How To Export Your Packages</li>
 	</ol>
 </nav>
 
                                         </div>
-                                        <p>Chocolatey Central Management (CCM) provides you insights across your desktop and endpoint environments.</p>
-<p>Once installed and configured, you can use CCM to:</p>
-<ul>
-<li>Bring reporting to the organizational level</li>
-<li>Quickly see all software across the organization and see what needs attention immediately</li>
-<li>Create reports for tracking and auditing purposes</li>
-<li>Manage endpoints with deployments through groups and collections</li>
-</ul>
+                                        <p>You've probably seen a few posts on how to create new packages, and installing them. What if you wanted to export a list of your currently installed packages, so you can install them all onto a new machine?</p>
+<p>In this post, we'll walk you through doing that.</p>
+<h3 id="exporting-packages-with-chocolatey-cli">Exporting Packages With Chocolatey CLI</h3>
+<p>In a command prompt, run the following code:</p>
+<pre><code class="language-PowerShell"># Change to your tutorials directory
+Set-Location ~\tutorials
+
+# Export your currently installed packages
+choco export packages.config
+</code></pre>
+<p>You should now have an XML formatted file (also known as a manifest) available in your current working directory named <code>packages.config</code>.</p>
 <blockquote>
-<p>:choco-info: <strong>NOTE</strong></p>
-<p>The information on this page has been spread out to an entire section and multiple pages. Links still here are due to code pointing to these. Please follow the link below for the most up-to-date information on CCM.</p>
+<p>:choco-info: <strong>Note:</strong> You can call this file anything, as long as the extension is <code>.config</code></p>
 </blockquote>
-<p>Please see <a href="/en-us/central-management">Chocolatey Central Management</a>.</p>
-<h2 id="roadmap">Roadmap</h2>
-<p>Please see <a href="/en-us/central-management#roadmap">Chocolatey Central Management</a>.</p>
-<h2 id="setup">Setup</h2>
-<p>Please see <a href="/en-us/central-management/setup">Central Management Setup</a>.</p>
-<h2 id="fqdn-usage">FQDN Usage</h2>
-<p>Please see <a href="/en-us/central-management/setup/service#fqdn-usage">Central Management Service Setup</a>.</p>
+<p>If you open it up, you should be able to see a list of packages that matches your current installs.</p>
+<p>It should look something like this:</p>
+<pre><code class="language-xml">&lt;?xml version="1.0" encoding="utf-8"?&gt;
+&lt;packages&gt;
+  &lt;package id="1PasswordCLI" /&gt;
+  &lt;package id="7zip" /&gt;
+  &lt;package id="7zip.install" /&gt;
+  &lt;package id="chocolatey" /&gt;
+  &lt;package id="chocolatey.extension" /&gt;
+  &lt;package id="chocolatey-compatibility.extension" /&gt;
+  &lt;package id="chocolatey-core.extension" /&gt;
+  &lt;!--... --&gt;
+&lt;/packages&gt;
+</code></pre>
+<p>Using this to provision a machine would result in the latest versions of every package being installed, though - what if you wanted to lock in specific versions of packages to install?</p>
+<p>You can also pass the <code>--include-version-numbers</code> argument to <code>choco export</code> (e.g. <code>choco export versionedpackages.config --include-version-numbers</code>) - this will result in an export containing the current version of each package:</p>
+<pre><code class="language-xml">&lt;?xml version="1.0" encoding="utf-8"?&gt;
+&lt;packages&gt;
+  &lt;package id="1PasswordCLI" version="2.0.0.8" /&gt;
+  &lt;package id="7zip" version="23.1.0" /&gt;
+  &lt;package id="7zip.install" version="23.1.0" /&gt;
+  &lt;package id="chocolatey" version="2.2.2" /&gt;
+  &lt;package id="chocolatey.extension" version="6.1.0" /&gt;
+  &lt;package id="chocolatey-compatibility.extension" version="1.0.0" /&gt;
+  &lt;package id="chocolatey-core.extension" version="1.4.0" /&gt;
+  &lt;!--... --&gt;
+&lt;/packages&gt;
+</code></pre>
+<p>You can then edit the result to remove any packages you didn't intend to capture, or to add, remove, or update expected versions.</p>
+<p>For more information on <code>choco export</code>, please see <a href="/en-us/choco/commands/export">this page</a>.</p>
+<h3 id="installing-packages-from-a-manifest">Installing Packages From a Manifest</h3>
+<p><code>choco install</code> is often one of the first Chocolatey CLI commands people try out - you may know that it accepts one or more package IDs, but did you know that it can also accept an export file like those we just created?</p>
+<p>To install everything in a <code>packages.config</code> file, open an elevated command prompt and run the following:</p>
+<pre><code class="language-PowerShell"># Change to your tutorials directory
+Set-Location ~\tutorials
+
+# Or provide a full path to your packages.config file
+choco install packages.config
+</code></pre>
+<p>This will then install every package in that manifest, from your configured sources.</p>
+<p>For more information on <code>choco install</code>, please see <a href="/en-us/choco/commands/install#packages.config">this page</a>.</p>
+<h3 id="conclusion">Conclusion</h3>
+<p>You should now be able to export a list of packages, and install them on a new machine! Hopefully that will be helpful to you.</p>
 
                                     </div>
                                             <div id="rightSidebarNav" class="col-xl-2 ps-xl-3 order-1 order-xl-2">
                                                 <button class="btn btn-link btn-collapse fw-bold w-100 d-xl-none mb-2" type="button" data-bs-toggle="collapse" data-bs-target="#rightSidebar" aria-expanded="false" aria-controls="rightSidebar">Jump to Section</button>
                                                 <div id="rightSidebar" class="sticky-xl-top collapse collapse-lg">
                                                     <div class="card card-body py-0 px-xl-0 mb-3 border-0">
-                                                            <p class="fw-bold pt-3"><a href="https://github.com/chocolatey/docs/edit/master/input/en-us/features/chocolatey-central-management.md"><i class="fa-solid fa-pencil" aria-hidden="true"></i> Edit This Page</a></p>
+                                                            <p class="fw-bold pt-3"><a href="https://github.com/chocolatey/docs/edit/master/input/en-us/guides/create/exporting-packages.md"><i class="fa-solid fa-pencil" aria-hidden="true"></i> Edit This Page</a></p>
                                                             <hr class="m-0">
                                                         <p class="fw-bold pt-3 mb-2">On This Page</p>
                                                         <ul class="nav nav-scrollspy flex-column pb-3">
-                                                                <li class="nav-item"><a class="nav-link " href="#roadmap">Roadmap</a></li>
-                                                                <li class="nav-item"><a class="nav-link " href="#setup">Setup</a></li>
-                                                                <li class="nav-item"><a class="nav-link " href="#fqdn-usage">FQDN Usage</a></li>
+                                                                <li class="nav-item"><a class="nav-link ps-4" href="#exporting-packages-with-chocolatey-cli">Exporting Packages With Chocolatey CLI</a></li>
+                                                                <li class="nav-item"><a class="nav-link ps-4" href="#installing-packages-from-a-manifest">Installing Packages From a Manifest</a></li>
+                                                                <li class="nav-item"><a class="nav-link ps-4" href="#conclusion">Conclusion</a></li>
                                                         </ul>
                                                     </div>
                                                 </div>
