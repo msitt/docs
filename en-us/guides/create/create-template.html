@@ -12,21 +12,21 @@ gtag('config', 'G-0WDD29GGN2');
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=Edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta name="description" content="Information on sensitive variables within Chocolatey Central Management" />
+        <meta name="description" content="Information on how to create Chocolatey package templates for building packages" />
         <meta name="twitter:site" content="@chocolateynuget">
-        <meta name="twitter:title" content="Chocolatey Software Docs | Sensitive Variables">
+        <meta name="twitter:title" content="Chocolatey Software Docs | How to create a Package Template">
             <meta name="twitter:card" content="summary">
             <meta name="twitter:image" content="https://docs.chocolatey.org/assets/images/global-shared/twitter-share.png">
-        <meta property="og:title" content="Chocolatey Software Docs | Sensitive Variables" />
-        <meta property="og:description" content="Information on sensitive variables within Chocolatey Central Management" />
+        <meta property="og:title" content="Chocolatey Software Docs | How to create a Package Template" />
+        <meta property="og:description" content="Information on how to create Chocolatey package templates for building packages" />
         <meta property="og:site_name" content="Chocolatey Software" />
         <meta property="og:type" content="product" />
         <meta property="og:image" content="https://docs.chocolatey.org/assets/images/global-shared/facebook-share.png" />
-        <meta property="og:url" content="https://docs.chocolatey.org/en-us/central-management/usage/website/administration/sensitive-variables" />
+        <meta property="og:url" content="https://docs.chocolatey.org/en-us/guides/create/create-template" />
         <meta property="product:brand" content="Chocolatey Software" />
         <meta property="product:category" content="software" />
         <meta name="flattr:id" content="mqgjkp">
-        <meta property="DC.title" content="Chocolatey Software Docs | Sensitive Variables" />
+        <meta property="DC.title" content="Chocolatey Software Docs | How to create a Package Template" />
         <meta property="copyright" content="Chocolatey is Copyright 2020 - 2023 Chocolatey Software,Inc." />
         <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
         <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
@@ -43,7 +43,7 @@ gtag('config', 'G-0WDD29GGN2');
         <link rel="stylesheet" href="/assets/css/chocolatey.bundle.min.css" />
         <script type="text/javascript" src="/assets/js/chocolatey-head.bundle.min.js"></script>
         <script type="text/javascript" async referrerpolicy="unsafe-url" src="https://ws.zoominfo.com/pixel/KPKpTJOFOv5SuV7X3eGx"></script>
-        <title>Chocolatey Software Docs | Sensitive Variables</title>
+        <title>Chocolatey Software Docs | How to create a Package Template</title>
     </head>
     <body class="chocolatey-docs">
         <header>
@@ -1112,12 +1112,12 @@ gtag('config', 'G-0WDD29GGN2');
                                                             </ul>
                                                         </div>
                                                     </li>
-                                                    <li class="nav-item nav-item-blue active">
-                                                        <div class="nav-link nav-link-collapse d-flex active">
-                                                            <button class="btn btn-collapse rounded-0 border-0 ps-3" type="button" data-bs-toggle="collapse" aria-expanded="true" aria-controls="id-012988c3-4ea6-4409-91df-91be5eba9f5c" aria-label="collapse or expand navigation" href="#id-012988c3-4ea6-4409-91df-91be5eba9f5c"></button>
+                                                    <li class="nav-item nav-item-blue">
+                                                        <div class="nav-link nav-link-collapse d-flex">
+                                                            <button class="btn btn-collapse rounded-0 border-0 ps-3 collapsed" type="button" data-bs-toggle="collapse" aria-expanded="false" aria-controls="id-012988c3-4ea6-4409-91df-91be5eba9f5c" aria-label="collapse or expand navigation" href="#id-012988c3-4ea6-4409-91df-91be5eba9f5c"></button>
                                                             <a href="/en-us/central-management">Chocolatey Central Management (CCM)</a>
                                                         </div>
-                                                        <div class="collapse show" id="id-012988c3-4ea6-4409-91df-91be5eba9f5c">
+                                                        <div class="collapse" id="id-012988c3-4ea6-4409-91df-91be5eba9f5c">
                                                             <ul class="navbar-nav">
                                                                         <li class="nav-item">
                                                                             <a class="nav-link ps-5" href="/en-us/central-management/release-notes">Release Notes</a>
@@ -1148,18 +1148,18 @@ gtag('config', 'G-0WDD29GGN2');
                                                                             </div>
                                                                         </li>
                                                                         <li class="nav-item">
-                                                                            <div class="nav-link nav-link-collapse d-flex active">
-                                                                                <button class="btn btn-collapse rounded-0 border-0 ps-c2" type="button" data-bs-toggle="collapse" aria-expanded="true" aria-controls="id-70f72a38-28f7-48f4-9bff-42ebf02f084f" aria-label="collapse or expand navigation" href="#id-70f72a38-28f7-48f4-9bff-42ebf02f084f"></button>
+                                                                            <div class="nav-link nav-link-collapse d-flex">
+                                                                                <button class="btn btn-collapse rounded-0 border-0 ps-c2 collapsed" type="button" data-bs-toggle="collapse" aria-expanded="false" aria-controls="id-70f72a38-28f7-48f4-9bff-42ebf02f084f" aria-label="collapse or expand navigation" href="#id-70f72a38-28f7-48f4-9bff-42ebf02f084f"></button>
                                                                                 <a href="/en-us/central-management/usage">Usage</a>
                                                                             </div>
-                                                                            <div class="collapse show" id="id-70f72a38-28f7-48f4-9bff-42ebf02f084f">
+                                                                            <div class="collapse" id="id-70f72a38-28f7-48f4-9bff-42ebf02f084f">
                                                                                 <ul class="navbar-nav">
                                                                                             <li class="nav-item">
-                                                                                                <div class="nav-link nav-link-collapse d-flex active">
-                                                                                                    <button class="btn btn-collapse rounded-0 border-0 ps-5" type="button" data-bs-toggle="collapse" aria-expanded="true" aria-controls="id-226699e4-6d7d-4791-b508-d191a11ffe37" aria-label="collapse or expand navigation" href="#id-226699e4-6d7d-4791-b508-d191a11ffe37"></button>
+                                                                                                <div class="nav-link nav-link-collapse d-flex">
+                                                                                                    <button class="btn btn-collapse rounded-0 border-0 ps-5 collapsed" type="button" data-bs-toggle="collapse" aria-expanded="false" aria-controls="id-226699e4-6d7d-4791-b508-d191a11ffe37" aria-label="collapse or expand navigation" href="#id-226699e4-6d7d-4791-b508-d191a11ffe37"></button>
                                                                                                     <a href="/en-us/central-management/usage/website">Website</a>
                                                                                                 </div>
-                                                                                                <div class="collapse show" id="id-226699e4-6d7d-4791-b508-d191a11ffe37">
+                                                                                                <div class="collapse" id="id-226699e4-6d7d-4791-b508-d191a11ffe37">
                                                                                                     <ul class="navbar-nav">
                                                                                                                 <li class="nav-item">
                                                                                                                     <a class="nav-link ps-c5" href="/en-us/central-management/usage/website/dashboard">Dashboard</a>
@@ -1183,11 +1183,11 @@ gtag('config', 'G-0WDD29GGN2');
                                                                                                                     <a class="nav-link ps-c5" href="/en-us/central-management/usage/website/general">General</a>
                                                                                                                 </li>
                                                                                                                 <li class="nav-item">
-                                                                                                                    <div class="nav-link nav-link-collapse d-flex active">
-                                                                                                                        <button class="btn btn-collapse rounded-0 border-0 ps-c4" type="button" data-bs-toggle="collapse" aria-expanded="true" aria-controls="id-e36ce87f-383e-4e83-83c0-5394c6a5a75c" aria-label="collapse or expand navigation" href="#id-e36ce87f-383e-4e83-83c0-5394c6a5a75c"></button>
+                                                                                                                    <div class="nav-link nav-link-collapse d-flex">
+                                                                                                                        <button class="btn btn-collapse rounded-0 border-0 ps-c4 collapsed" type="button" data-bs-toggle="collapse" aria-expanded="false" aria-controls="id-e36ce87f-383e-4e83-83c0-5394c6a5a75c" aria-label="collapse or expand navigation" href="#id-e36ce87f-383e-4e83-83c0-5394c6a5a75c"></button>
                                                                                                                         <a href="/en-us/central-management/usage/website/administration">Administration</a>
                                                                                                                     </div>
-                                                                                                                    <div class="collapse show" id="id-e36ce87f-383e-4e83-83c0-5394c6a5a75c">
+                                                                                                                    <div class="collapse" id="id-e36ce87f-383e-4e83-83c0-5394c6a5a75c">
                                                                                                                         <ul class="navbar-nav">
                                                                                                                                     <li class="nav-item">
                                                                                                                                         <a class="nav-link ps-c6" href="/en-us/central-management/usage/website/administration/roles">Roles</a>
@@ -1196,7 +1196,7 @@ gtag('config', 'G-0WDD29GGN2');
                                                                                                                                         <a class="nav-link ps-c6" href="/en-us/central-management/usage/website/administration/users">Users</a>
                                                                                                                                     </li>
                                                                                                                                     <li class="nav-item">
-                                                                                                                                        <a class="nav-link ps-c6 active active-page" href="/en-us/central-management/usage/website/administration/sensitive-variables">Sensitive Variables</a>
+                                                                                                                                        <a class="nav-link ps-c6" href="/en-us/central-management/usage/website/administration/sensitive-variables">Sensitive Variables</a>
                                                                                                                                     </li>
                                                                                                                                     <li class="nav-item">
                                                                                                                                         <a class="nav-link ps-c6" href="/en-us/central-management/usage/website/administration/audit-logs">Audit Logs</a>
@@ -1703,12 +1703,12 @@ gtag('config', 'G-0WDD29GGN2');
                                                             </ul>
                                                         </div>
                                                     </li>
-                                                    <li class="nav-item nav-item-blue">
-                                                        <div class="nav-link nav-link-collapse d-flex">
-                                                            <button class="btn btn-collapse rounded-0 border-0 ps-3 collapsed" type="button" data-bs-toggle="collapse" aria-expanded="false" aria-controls="id-dc2229ce-6179-4e42-b896-2a61efd9e577" aria-label="collapse or expand navigation" href="#id-dc2229ce-6179-4e42-b896-2a61efd9e577"></button>
+                                                    <li class="nav-item nav-item-blue active">
+                                                        <div class="nav-link nav-link-collapse d-flex active">
+                                                            <button class="btn btn-collapse rounded-0 border-0 ps-3" type="button" data-bs-toggle="collapse" aria-expanded="true" aria-controls="id-dc2229ce-6179-4e42-b896-2a61efd9e577" aria-label="collapse or expand navigation" href="#id-dc2229ce-6179-4e42-b896-2a61efd9e577"></button>
                                                             <a href="/en-us/guides">Guides</a>
                                                         </div>
-                                                        <div class="collapse" id="id-dc2229ce-6179-4e42-b896-2a61efd9e577">
+                                                        <div class="collapse show" id="id-dc2229ce-6179-4e42-b896-2a61efd9e577">
                                                             <ul class="navbar-nav">
                                                                         <li class="nav-item">
                                                                             <a class="nav-link ps-5" href="/en-us/guides/upgrading-to-chocolatey-v2-v6">Upgrading To Chocolatey Products v2.0.0 and Chocolatey Licensed Extension 6.0.0</a>
@@ -1736,11 +1736,11 @@ gtag('config', 'G-0WDD29GGN2');
                                                                             </div>
                                                                         </li>
                                                                         <li class="nav-item">
-                                                                            <div class="nav-link nav-link-collapse d-flex">
-                                                                                <button class="btn btn-collapse rounded-0 border-0 ps-c2 collapsed" type="button" data-bs-toggle="collapse" aria-expanded="false" aria-controls="id-ef3e5692-bd40-4c7e-8993-0034d0ed17c5" aria-label="collapse or expand navigation" href="#id-ef3e5692-bd40-4c7e-8993-0034d0ed17c5"></button>
+                                                                            <div class="nav-link nav-link-collapse d-flex active">
+                                                                                <button class="btn btn-collapse rounded-0 border-0 ps-c2" type="button" data-bs-toggle="collapse" aria-expanded="true" aria-controls="id-ef3e5692-bd40-4c7e-8993-0034d0ed17c5" aria-label="collapse or expand navigation" href="#id-ef3e5692-bd40-4c7e-8993-0034d0ed17c5"></button>
                                                                                 <a href="/en-us/guides/create">Package Creation</a>
                                                                             </div>
-                                                                            <div class="collapse" id="id-ef3e5692-bd40-4c7e-8993-0034d0ed17c5">
+                                                                            <div class="collapse show" id="id-ef3e5692-bd40-4c7e-8993-0034d0ed17c5">
                                                                                 <ul class="navbar-nav">
                                                                                             <li class="nav-item">
                                                                                                 <a class="nav-link ps-c4" href="/en-us/guides/create/prepare-packaging-env">How To Prepare a Package Creation Environment</a>
@@ -1779,7 +1779,7 @@ gtag('config', 'G-0WDD29GGN2');
                                                                                                 <a class="nav-link ps-c4" href="/en-us/guides/create/create-custom-package-templates">Create Custom Package Templates</a>
                                                                                             </li>
                                                                                             <li class="nav-item">
-                                                                                                <a class="nav-link ps-c4" href="/en-us/guides/create/create-template">How to create a Package Template</a>
+                                                                                                <a class="nav-link ps-c4 active active-page" href="/en-us/guides/create/create-template">How to create a Package Template</a>
                                                                                             </li>
                                                                                             <li class="nav-item">
                                                                                                 <a class="nav-link ps-c4" href="/en-us/guides/create/create-extension-package">How To Create an Extension Package</a>
@@ -1908,16 +1908,14 @@ gtag('config', 'G-0WDD29GGN2');
                         </div>
                         <div class="col-md-9 col-xl-10 py-3 py-md-5 px-md-4 mx-auto">
                             <div class="container d-xl-none">
-                                <h1 class="title">Sensitive Variables</h1>                 
+                                <h1 class="title">How to create a Package Template</h1>                 
 <nav aria-label="breadcrumb">
 	<ol class="breadcrumb">
 			<li class="breadcrumb-item"><a href="/en-us">Chocolatey</a></li>
-			<li class="breadcrumb-item"><a href="/en-us/central-management">Chocolatey Central Management (CCM)</a></li>
-			<li class="breadcrumb-item"><a href="/en-us/central-management/usage">Usage</a></li>
-			<li class="breadcrumb-item"><a href="/en-us/central-management/usage/website">Website</a></li>
-			<li class="breadcrumb-item"><a href="/en-us/central-management/usage/website/administration">Administration</a></li>
+			<li class="breadcrumb-item"><a href="/en-us/guides">Guides</a></li>
+			<li class="breadcrumb-item"><a href="/en-us/guides/create">Package Creation</a></li>
 		
-		<li class="breadcrumb-item active" aria-current="page">Sensitive Variables</li>
+		<li class="breadcrumb-item active" aria-current="page">How to create a Package Template</li>
 	</ol>
 </nav>
 
@@ -1926,67 +1924,96 @@ gtag('config', 'G-0WDD29GGN2');
                                 <div class="row">
                                     <div id="mainContent" class="anchorjs-container col-xl-10 order-2 order-xl-1">
                                         <div class="d-none d-xl-block">
-                                            <h1 class="title">Sensitive Variables</h1>                 
+                                            <h1 class="title">How to create a Package Template</h1>                 
 <nav aria-label="breadcrumb">
 	<ol class="breadcrumb">
 			<li class="breadcrumb-item"><a href="/en-us">Chocolatey</a></li>
-			<li class="breadcrumb-item"><a href="/en-us/central-management">Chocolatey Central Management (CCM)</a></li>
-			<li class="breadcrumb-item"><a href="/en-us/central-management/usage">Usage</a></li>
-			<li class="breadcrumb-item"><a href="/en-us/central-management/usage/website">Website</a></li>
-			<li class="breadcrumb-item"><a href="/en-us/central-management/usage/website/administration">Administration</a></li>
+			<li class="breadcrumb-item"><a href="/en-us/guides">Guides</a></li>
+			<li class="breadcrumb-item"><a href="/en-us/guides/create">Package Creation</a></li>
 		
-		<li class="breadcrumb-item active" aria-current="page">Sensitive Variables</li>
+		<li class="breadcrumb-item active" aria-current="page">How to create a Package Template</li>
 	</ol>
 </nav>
 
                                         </div>
-                                        <p>Chocolatey Central Management gives you the ability to create sensitive variables for use in Deployment Steps.</p>
-<p>The <strong>Sensitive Variables</strong> page can be accessed from the Administration section of Chocolatey Central Management. The page is only visible to users who have permissions to create or delete sensitive variables.</p>
-<p><img src="/assets/images/sensitive-variables/ccm-sensitive-variables-nav.png" alt="Sensitive Variables menu entry on the CCM Dashboard" /></p>
-<h2 id="creating-a-new-sensitive-variable">Creating a new Sensitive Variable</h2>
-<ol>
-<li><p>From the Chocolatey Central Management Dashboard, select <code>Administration</code> &gt; <code>Sensitive Variables</code> from the left sidebar.</p>
-<p><img src="/assets/images/sensitive-variables/ccm-sensitive-variables-nav.png" alt="Central Management dashboard, arrow pointing to Sensitive Variables menu in the left sidebar entry on the CCM Dashboard" /></p>
-</li>
-<li><p>Select the ➕ <strong>Create new sensitive variable</strong> button at the top of the page.</p>
-<p><img src="/assets/images/sensitive-variables/create-new-btn.png" alt="CCM Sensitive Variables page, arrow pointing to Create new sensitive variable button" /></p>
-</li>
-<li><p>Fill in the details and click Save.</p>
-<p><img src="/assets/images/sensitive-variables/fill-in-variable.png" alt="Fill in Sensitive Variables information" /></p>
-</li>
-</ol>
-<p>Alternatively, variables can also be added from an Deployment Step Advanced script by clicking the ➕ in the upper right corner.</p>
-<p><img src="/assets/images/sensitive-variables/ccm-deployment-step-add-btn.png" alt="Sensitive Variables Added from the Advanced script of a Deployment Step" /></p>
-<h2 id="adding-sensitive-variables-to-scripts">Adding Sensitive Variables to scripts</h2>
-<ol>
-<li>In an Advanced script of a Deployment Step, select the variable to insert from the Sensitive Variables drop down.</li>
-</ol>
-<p><img src="/assets/images/sensitive-variables/add-variable-to-deployment-step.png" alt="Deployment Step Advanced script, showing the Sensitive Variables drop down with SERVICE_PASSWORD selected" /></p>
-<h2 id="deleting-sensitive-variables">Deleting Sensitive Variables</h2>
-<ol>
-<li><p>From the Chocolatey Central Management Dashboard, select <code>Administration</code> &gt; <code>Sensitive Variables</code> from the left sidebar.</p>
-<p><img src="/assets/images/sensitive-variables/ccm-sensitive-variables-nav.png" alt="Central Management dashboard, arrow pointing to Sensitive Variables menu in the left sidebar entry on the CCM Dashboard" /></p>
-</li>
-<li><p>Select 🗑️ <strong>Delete</strong> beside the Sensitive Variable you wish to delete.</p>
-<p><img src="/assets/images/sensitive-variables/delete-variable.png" alt="Sensitive Variables page with arrow to a delete button" /></p>
-</li>
-</ol>
-<h2 id="editing-changing-sensitive-variables">Editing / Changing Sensitive Variables</h2>
-<p>You cannot change or edit a Sensitive Variable directly. If you need to change the value a Sensitive Variable has, please <a href="#deleting-sensitive-variables">delete it</a> and <a href="#creating-a-new-sensitive-variable">create it</a> again.</p>
+                                        <p>Chocolatey templates are one of the more lesser-known, yet very powerful, features of Chocolatey. Templates can be created for many different types of packages, and will allow for packages of a particular type to be extremely consistent. You could create package templates for packages that:</p>
+<ul>
+<li>Runs an msi installer</li>
+<li>Runs an exe installer</li>
+<li>Copies files to specific places</li>
+<li>Makes registry edits</li>
+</ul>
+<p>The key takeaway is templates are only limited by your imagination, and can be as flexible as you need them to be.</p>
+<p>One of the most powerful advantages of templates is their ability to use key-value pairs to pass specific data into a package. For example, you may have a need to create multiple packages whose only difference is the location in which they will be used. In this situation, you could pass the location data to your template, which could update the necessary portions of any scripts included in the template.</p>
+<h3 id="creating-your-template">Creating Your Template</h3>
+<p>Templates are stored in the <code>C:\ProgramData\chocolatey\templates</code> directory. The name of the folder must match the name you wish to give the template.</p>
+<h4 id="create-template-directories">Create Template Directories</h4>
+<p>Execute the following in an <strong>elevated</strong> PowerShell window to create our template folder.</p>
+<pre><code class="language-powershell">New-Item -Path 'C:\ProgramData\chocolatey\templates\TutorialTemplate','C:\ProgramData\chocolatey\templates\TutorialTemplate\tools' -ItemType Directory
+</code></pre>
+<h4 id="create-install-script">Create Install Script</h4>
+<p>We'll next create a <em>very</em> simple <code>chocolateyInstall.ps1</code> script for our template.</p>
+<p>Execute the following in an <strong>elevated</strong> PowerShell window to create the script.</p>
+<pre><code class="language-powershell"> &#64;'
+Write-Host &quot;I am from [[Country]]&quot;
+'&#64; | Set-Content 'C:\ProgramData\chocolatey\templates\TutorialTemplate\tools\chocolateyInstall.ps1'
+</code></pre>
+<h4 id="create-package-metadata">Create Package Metadata</h4>
+<p>We'll use the following for our template metadata. Execute the following in an <strong>elevated</strong> PowerShell window.</p>
+<pre><code class="language-powershell">&#64;'
+&lt;package xmlns=&quot;http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd&quot;&gt;
+  &lt;metadata&gt;
+    &lt;id&gt;[[PackageNameLower]]&lt;/id&gt;
+    &lt;version&gt;[[PackageVersion]]&lt;/version&gt;
+    &lt;owners&gt;SweetTooth&lt;/owners&gt;
+    &lt;title&gt;template-tutorial (Install)&lt;/title&gt;
+    &lt;authors&gt;Chocolatey]&lt;/authors&gt;
+    &lt;tags&gt;template&lt;/tags&gt;
+    &lt;summary&gt;Tutorial package from template&lt;/summary&gt;
+    &lt;description&gt;This was built from a template with [[Country]] passed to it.&lt;/description&gt;
+  &lt;/metadata&gt;
+  &lt;!-- this section controls what actually gets packaged into the Chocolatey package --&gt;
+  &lt;files&gt;
+    &lt;file src=&quot;tools\**&quot; target=&quot;tools&quot; /&gt;
+  &lt;/files&gt;
+&lt;/package&gt;
+'&#64; | Set-Content 'C:\ProgramData\chocolatey\templates\TutorialTemplate\file.nuspec'
+</code></pre>
+<h4 id="understanding-templated-values">Understanding Templated Values</h4>
+<p>In the code above you'll no doubt have noticed several instances of placeholders in <code>[[this]]</code> format. Items wrapped in <code>[[]]</code> will be replaced by the value from the command-line.</p>
+<p>Placeholders are addressed as <code>key:value</code> pairs on the commandline where  the <code>key</code> is the placeholder and <code>value</code> is what will be replaced in the file.</p>
+<h4 id="building-package-from-template">Building Package From Template</h4>
+<p>Let's see this usage of a template in practice. In an <strong>elevated</strong> PowerShell window execute the following</p>
+<pre><code class="language-powershell"># Substitute the country USA with your own Country below
+Set-Location '~\tutorials'
+choco new template-tutorial --version='1.0.0' --template='TutorialTemplate' Country:USA --build-package
+</code></pre>
+<h4 id="install-your-templated-package">Install Your Templated Package</h4>
+<p>We can validate that our package used the template correctly by installing it. Run the following in an <strong>elevated</strong> PowerShell window.</p>
+<pre><code class="language-powershell">choco install template-tutorial -y
+</code></pre>
+<h4 id="uninstall-your-templated-package">Uninstall Your Templated Package</h4>
+<p>You can remove this tutorial package with the following</p>
+<pre><code class="language-powershell">choco uninstall template-tutorial -y
+</code></pre>
 
                                     </div>
                                             <div id="rightSidebarNav" class="col-xl-2 ps-xl-3 order-1 order-xl-2">
                                                 <button class="btn btn-link btn-collapse fw-bold w-100 d-xl-none mb-2" type="button" data-bs-toggle="collapse" data-bs-target="#rightSidebar" aria-expanded="false" aria-controls="rightSidebar">Jump to Section</button>
                                                 <div id="rightSidebar" class="sticky-xl-top collapse collapse-lg">
                                                     <div class="card card-body py-0 px-xl-0 mb-3 border-0">
-                                                            <p class="fw-bold pt-3"><a href="https://github.com/chocolatey/docs/edit/master/input/en-us/central-management/usage/website/administration/sensitive-variables.md"><i class="fa-solid fa-pencil" aria-hidden="true"></i> Edit This Page</a></p>
+                                                            <p class="fw-bold pt-3"><a href="https://github.com/chocolatey/docs/edit/master/input/en-us/guides/create/create-template.md"><i class="fa-solid fa-pencil" aria-hidden="true"></i> Edit This Page</a></p>
                                                             <hr class="m-0" />
                                                         <p class="fw-bold pt-3 mb-2">On This Page</p>
                                                         <ul class="nav nav-scrollspy flex-column pb-3">
-                                                                <li class="nav-item"><a class="nav-link " href="#creating-a-new-sensitive-variable">Creating a new Sensitive Variable</a></li>
-                                                                <li class="nav-item"><a class="nav-link " href="#adding-sensitive-variables-to-scripts">Adding Sensitive Variables to scripts</a></li>
-                                                                <li class="nav-item"><a class="nav-link " href="#deleting-sensitive-variables">Deleting Sensitive Variables</a></li>
-                                                                <li class="nav-item"><a class="nav-link " href="#editing-changing-sensitive-variables">Editing / Changing Sensitive Variables</a></li>
+                                                                <li class="nav-item"><a class="nav-link ps-4" href="#creating-your-template">Creating Your Template</a></li>
+                                                                <li class="nav-item"><a class="nav-link ps-5" href="#create-template-directories">Create Template Directories</a></li>
+                                                                <li class="nav-item"><a class="nav-link ps-5" href="#create-install-script">Create Install Script</a></li>
+                                                                <li class="nav-item"><a class="nav-link ps-5" href="#create-package-metadata">Create Package Metadata</a></li>
+                                                                <li class="nav-item"><a class="nav-link ps-5" href="#understanding-templated-values">Understanding Templated Values</a></li>
+                                                                <li class="nav-item"><a class="nav-link ps-5" href="#building-package-from-template">Building Package From Template</a></li>
+                                                                <li class="nav-item"><a class="nav-link ps-5" href="#install-your-templated-package">Install Your Templated Package</a></li>
+                                                                <li class="nav-item"><a class="nav-link ps-5" href="#uninstall-your-templated-package">Uninstall Your Templated Package</a></li>
                                                         </ul>
                                                     </div>
                                                 </div>
