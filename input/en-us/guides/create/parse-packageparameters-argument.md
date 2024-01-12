@@ -243,7 +243,7 @@ Having collected all the arguments into the dictionary, we can then inspect the 
 Typically this is handled in the following way:
 
 ~~~sh
-choco install <packageName> --params "'/key:value key2:value'"
+choco install <packageName> --params "'/key:value /key2:value'"
 ~~~
 
 > :choco-info: **NOTE**
